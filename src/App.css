@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+}
+.hidden {
+  display:none;
+}
+.section {
+  max-width: 1200px;
+  padding: 50px 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-background {
+  background-color:  #000;
+}
+
+.tinted {
+  opacity: 0.7;
+}
+
+.btn {
+  float: right;
+}
+h1 {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 20%;
+    height: 3px;
+    content: '';
+    background-color: #000;
+}
+h1:before {
+    margin-left: -20%;
+    text-align: right;
+}
+.color {
+    background-color: #ccc;
+}
+
+.page {
+  padding: 80px 0px;
+  background-color: #3c3c3c;
+}
