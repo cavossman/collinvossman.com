@@ -42,6 +42,7 @@ class Header extends Component {
       <header className={(isScrolling) ? 'header header-normal' : 'header header-top'}>
         <div className="container nav">
           <a href="/" className="home-link">Collin Vossman</a>
+          <a href="/contact" className="btn">Contact</a>
           <a href="/about" className="btn">About</a>
           <a href="/projects" className="btn">Projects</a>
         </div>

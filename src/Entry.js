@@ -12,6 +12,7 @@ import Footer from './Components/Footer'
 import Homepage from './Homepage/Homepage';
 import About from './About/About';
 import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
 
 // ROUTING FOR ALL PAGES
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/" component={ Homepage } />
           <Route exact path="/about" component={ About } />
           <Route exact path="/projects" component={ Projects } />
+          <Route exact path="/contact" component={ Contact } />
         </Switch>
       </BrowserRouter>
       <Footer />
