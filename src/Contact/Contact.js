@@ -3,29 +3,19 @@ import React, { Component } from 'react';
 import './Contact.css';
 import '../Components/Components.css';
 
-class About extends Component {
+import Form from '../Components/Form/Form';
 
-  emailCollin() {
-    console.log('test');
-  }
+class Contact extends Component {
 
   render() {
     return (
       <div className="page">
         <div className="container">
-          <form action="#">
-            First name:<br />
-            <input type="text" name="firstname" /><br />
-            Last name:<br />
-            <input type="text" name="lastname" /><br />
-            Comments:<br />
-            <input type="text" name="comments" /><br /><br />
-            <input type="submit" value="Submit" onClick={ this.emailCollin() }/>
-          </form>
+          <Form />
         </div>
       </div>
     );
   }
 }
 
-export default About;
+export default Contact;
