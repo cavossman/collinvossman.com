@@ -4,10 +4,10 @@ import './Components.css';
 
 class InfoCard extends Component {
   render() {
-    var imageStyles = {
-      backgroundImage: 'url(' + this.props.image + ')',
-      height: '100px',
-    };
+    // var imageStyles = {
+    //   backgroundImage: 'url(' + this.props.image + ')',
+    //   height: '100px',
+    // };
 
     return (
       <div className="project-card">

@@ -1,8 +1,10 @@
 // Dependencies
 import React, { Component } from 'react';
+import axios from 'axios';
 // Externals
 import Field from './Field';
 import Button from './Button';
+import './Form.css';
 
 
 class Form extends Component {
@@ -15,6 +17,7 @@ class Form extends Component {
     };
     // To ensure 'this' when calling 'this.updateField' refers to Form and not Field, we do:
     this.updateField = this.updateField.bind(this);
+    this.submitForm = this.submitForm.bind(this);
   }
 
   // Field could be 'name', 'email', or 'message'
@@ -23,9 +26,21 @@ class Form extends Component {
     this.setState({ [field]: value });
   }
 
+  //Posting to ZAP on every change.  Need to adjust to only submit on button click.
+  submitForm() {
+    axios({
+      method: 'post',
+      headers : {
+        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
+      },
+      url: 'https://hooks.zapier.com/hooks/catch/3415210/avnnqb/',
+      data: this.state
+    });
+  }
+
   render() {
     return (
-      <div>
+      <form className="form">
         {/* Name field */}
         <Field
           label="Name"
@@ -48,10 +63,11 @@ class Form extends Component {
         />
         {/* Submit button */}
         <Button
-          email="kgadams93@gmail.com"
+          email="cavossman@gmail.com"
           formValues={this.state}
+          onClick={this.submitForm()}
         />
-      </div>
+      </form>
     );
   }
 }

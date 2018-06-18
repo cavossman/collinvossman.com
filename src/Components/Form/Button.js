@@ -33,7 +33,7 @@ class Button extends Component {
         disabled={this.state.isClicked}
         onClick={this.logFormDataToConsole}
       >
-        Contact Us
+        Contact Me
       </button>
     );
   }
