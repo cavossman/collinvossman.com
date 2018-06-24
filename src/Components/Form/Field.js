@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 // Stateless component / Functional component
 const Field = (props) => (
-  <div>
+  <div className="form-group">
     <label>{props.label}</label>
     <input
       onChange={props.onChange}

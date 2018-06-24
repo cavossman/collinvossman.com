@@ -70,3 +70,9 @@ h1:before {
   padding: 80px 0px;
   background-color: #3c3c3c;
 }
+
+@media (max-width: 380px) {
+  .hide-xxs {
+    display: none;
+  }
+}

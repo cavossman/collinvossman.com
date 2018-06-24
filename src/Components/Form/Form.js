@@ -41,6 +41,8 @@ class Form extends Component {
   render() {
     return (
       <form className="form">
+        <h2 className="hide-xxs">Contact Me</h2>
+        <span>If you want to get in touch with me, fill out the form below and I will get back to you as soon as I can.</span>
         {/* Name field */}
         <Field
           label="Name"
