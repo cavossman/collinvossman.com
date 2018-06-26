@@ -6,6 +6,7 @@ import InfoCard from '../Components/InfoCard';
 import kstate from '../images/kansas-state.png';
 import bd from '../images/bd.png';
 import hyvee from '../images/hyvee.svg';
+import eagleScout from '../images/eagle-scout.png';
 
 // STYLESHEETS
 import '../About/About.css';
@@ -29,7 +30,7 @@ class About extends Component {
           </div>
           <div className="awards">
             <span className="section-title">Awards</span>
-            <InfoCard image={ bd } employer="Eagle Scout" title="Troop 91" time="2013" />
+            <InfoCard image={ eagleScout } employer="Eagle Scout" title="Troop 91" time="2013" />
           </div>
         </div>
       </div>
