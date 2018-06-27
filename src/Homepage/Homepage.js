@@ -68,8 +68,9 @@ class Homepage extends Component {
             <h1>COLLIN VOSSMAN</h1>
             <p>
               Welcome to my website. I am a recent graduate of Kansas State University where I majored in Computer Science and minored in
-              Leadership Studies.  I currently work at Builder Designs where I maintain and add features to existing websites.  I have a
-              strong interest in API development and enjoy both front end and back end development.
+              Leadership Studies.  I currently work at Builder Designs where I maintain and add features to existing websites. I work with
+              the marketing and SEO teams to manage CRM integrations, structured data and analytics. I have a strong interest in working
+              with APIs and enjoy both front end and back end development.  In my free time I enjoy spending time with my wife and our puppy.
             </p>
           </div>
         </div>

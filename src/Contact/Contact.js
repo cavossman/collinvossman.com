@@ -8,8 +8,9 @@ import Form from '../Components/Form/Form';
 class Contact extends Component {
 
   render() {
+    // inline style page height to help while wrapping up more important things
     return (
-      <div className="page">
+      <div className="page" style={{"minHeight": "62vh"}}>
         <div className="container">
           <Form />
         </div>

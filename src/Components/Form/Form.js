@@ -43,24 +43,20 @@ class Form extends Component {
       this.setState({'submitted': true});
     } else {
       console.log('rejected');
-      // alert('you made an error in your form boo');
     }
   }
 
-  // Works but refreshes page and deletes all information in form. - revise or come up with a new idea
+  // Need to improve validation.
   validateForm() {
     return this.checkName() && this.checkEmail() && this.checkMessage();
   }
   checkName() {
-    console.log('name', this.state.name.length >= 3);
     return this.state.name.length >= 3;
   }
   checkEmail() {
-    console.log('email', this.state.email.split('@').length >= 2);
     return this.state.email.split('@').length >= 2;
   }
   checkMessage() {
-    console.log('message', this.state.message.length >= 3);
     return this.state.message.length >= 3;
   }
 

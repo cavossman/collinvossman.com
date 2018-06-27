@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './Components.css';
 
-class InfoCard extends Component {
+class ProjectCard extends Component {
   render() {
     // var imageStyles = {
     //   backgroundImage: 'url(' + this.props.image + ')',
@@ -11,14 +11,19 @@ class InfoCard extends Component {
 
     return (
       <div className="project-card">
-        <div className="project-details">
-          <span className="headline">{ this.props.title }</span><br />
-          <span className="detail">{ this.props.time }</span><br />
-          <span className="description"> { this.props.description }</span>
+        <div className="project-container">
+          <div className="project-details">
+            <span className="headline">{ this.props.title }<hr /></span>
+            <span className="description"> { this.props.description }</span>
+          </div>
+          <div className="project-image">
+            { this.props.featuredImage && <img src={this.props.featuredImage} alt="" /> }
+            { this.props.secondaryImage && <img src={this.props.secondaryImage} alt="" /> }
+          </div>
         </div>
       </div>
     );
   }
 }
 
-export default InfoCard;
+export default ProjectCard;

@@ -64,23 +64,51 @@
   vertical-align: top;
   padding-left: 20px;
 }
+
+/* PROJECTCARD */
 .project-card {
-  width: 700px;
+  width: 100%;
   background-color: #fff;
-  border-radius: 3px;
   margin: 15px auto;
-  padding: 20px;
   text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .project-details {
   display:inline-block;
   width: 100%;
   vertical-align: top;
-  padding-left: 20px;
+}
+.project-image {
+  width: 50%;
+  min-width: 500px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+/* @media (max-width: 1200px) {
+  .project-image {
+    margin: 0 auto;
+  }
+} */
+@media (max-width: 600px) {
+  .project-image {
+    width: 100%;
+    min-width: 1px;
+  }
+}
+.project-image img {
+  border-radius: 3px;
+  border: 1px solid #000;
+  max-width: 100%;
+  max-height: 300px;
+  margin: 0 10px;
 }
 .headline {
   font-size: 20px;
   font-weight: bold;
+  width: 70%;
 }
 .detail {
   font-size: 14px;
