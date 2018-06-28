@@ -20,6 +20,9 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+.wrapper {
+  padding: 20px;
+}
 
 .row {
   width: 100%;

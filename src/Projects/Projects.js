@@ -17,7 +17,7 @@ class Projects extends Component {
         <div className="current">
           <span className="section-title">Current Projects</span><br />
           <span className="disclaimer">*More information and progress screenshots to come.</span>
-          <ProjectCard title="Micro Cloud" featuredImage={mc} description="Content Management System (CMS) for Micro Map applications.  API utilizes Node, Express, Mongo, Mongoose.  Interface utilizes React framework." />
+          <ProjectCard title="Micro Cloud" featuredImage={mc} description="Content Management System (CMS) for Micro Map applications.  API utilizes Node, Express and MongoDB.  Interface utilizes React framework." />
           <ProjectCard title="Micro Map" featuredImage={mm_map} secondaryImage={mm_building} description="Mobile application to help students navigate a new unfamiliar campus.  Currently Android only.  Writen in Android Studio using Java and XML." />
         </div>
         <div className="upcoming">

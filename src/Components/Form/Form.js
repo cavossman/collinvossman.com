@@ -71,33 +71,35 @@ class Form extends Component {
 
     return (
       <div className="form">
-        <h2 className="hide-xxs">Contact Me</h2>
-        <span>{message}</span>
-        {this.state.submitted === false &&
-          <form onSubmit={this.handleSubmit}>
-          {/* Name field */}
-          <Field
-            label="Name"
-            onChange={(event) => this.updateField('name', event.target.value)}
-            value={this.state.name}
-          />
-          {/* Email field */}
-          <Field
-            label="Email"
-            onChange={(event) => this.updateField('email', event.target.value)}
-            value={this.state.email}
-          />
-          {/* Message textarea */}
-          <Field
-            label="Message"
-            onChange={(event) => this.updateField('message', event.target.value)}
-            /* This should be written like 'textarea' */
-            textarea={true}
-            value={this.state.message}
-          />
-          {/* Submit button */}
-          <input type="submit" value="Submit" className="submit-btn" disabled={ !this.validateForm() } />
-        </form>}
+        <div className="wrapper">
+          <h2 className="">Contact Me</h2>
+          <span>{message}</span>
+          {this.state.submitted === false &&
+            <form onSubmit={this.handleSubmit}>
+            {/* Name field */}
+            <Field
+              label="Name"
+              onChange={(event) => this.updateField('name', event.target.value)}
+              value={this.state.name}
+            />
+            {/* Email field */}
+            <Field
+              label="Email"
+              onChange={(event) => this.updateField('email', event.target.value)}
+              value={this.state.email}
+            />
+            {/* Message textarea */}
+            <Field
+              label="Message"
+              onChange={(event) => this.updateField('message', event.target.value)}
+              /* This should be written like 'textarea' */
+              textarea={true}
+              value={this.state.message}
+            />
+            {/* Submit button */}
+            <input type="submit" value="Submit" className="submit-btn" disabled={ !this.validateForm() } />
+          </form>}
+        </div>
       </div>
     );
   }

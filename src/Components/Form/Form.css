@@ -1,10 +1,15 @@
 .form {
   background-color: #fff;
   border-radius: 10px;
-  padding:20px;
   width: 50%;
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 450px;
+}
+@media (max-width: 550px) {
+  .form {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .form-group {
 
