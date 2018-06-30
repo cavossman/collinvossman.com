@@ -14,7 +14,7 @@ class ProjectCard extends Component {
         <div className="wrapper">
           <div className="project-container">
             <div className="project-details">
-              <span className="headline">{ this.props.title }<hr /></span>
+              <span className="headline">{ this.props.title }<hr align="left"/></span>
               <span className="description"> { this.props.description }</span>
             </div>
             <div className="project-image">

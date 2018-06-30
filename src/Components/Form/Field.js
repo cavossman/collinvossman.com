@@ -8,11 +8,18 @@ import PropTypes from 'prop-types';
 const Field = (props) => (
   <div className="form-group">
     <label>{props.label}</label>
-    <input
-      onChange={props.onChange}
-      type={props.textarea ? 'textarea' : 'text'}
-      value={props.value}
-    />
+
+    { props.textarea &&
+      <textarea onChange={props.onChange} value={props.value} />
+    }
+
+    { !props.textarea &&
+      <input
+        onChange={props.onChange}
+        type={props.textarea ? 'textarea' : 'text'}
+        value={props.value}
+      />
+    }
   </div>
 );
 

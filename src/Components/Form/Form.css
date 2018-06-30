@@ -1,6 +1,6 @@
 .form {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 4px;
   width: 50%;
   margin: 0 auto;
   max-width: 450px;
@@ -24,20 +24,7 @@
   padding-top: 15px;
   float: left;
 }
-.form-group input {
-  background-color: #fff !important;
-  border: 1px solid #CCC !important;
-  padding: 3px 0 !important;
-  height: auto;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  display: block;
-  width: 100%;
-  height: 34px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-}
+
 .submit-btn {
   display:inline-block;
   padding:0.35em 1.2em;
@@ -57,4 +44,24 @@
   background-color: #3c3c3c;
   border-color: #3c3c3c;
   cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
 }

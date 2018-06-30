@@ -90,6 +90,11 @@
   width: 100%;
   vertical-align: top;
 }
+.project-details hr {
+  width: 120px;
+  border-top: 4px solid #7bab01;
+  margin-top: 40px;
+}
 .project-image {
   width: 50%;
   min-width: 500px;
@@ -123,8 +128,12 @@
 }
 .headline {
   font-size: 20px;
-  font-weight: bold;
   width: 70%;
+  font: normal 16px/1.5 "Source Sans Pro",sans-serif;
+  font-size: 44px;
+  font-weight: 300;
+  line-height: 55px;
+  color: #3b3b3b;
 }
 .detail {
   font-size: 14px;
