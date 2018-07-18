@@ -118,7 +118,7 @@
   }
 }
 .project-image img {
-  border-radius: 3px;
+  /* border-radius: 3px; */
   border: 1px solid #000;
   max-width: 100%;
   max-height: 300px;
@@ -127,10 +127,9 @@
   margin: 0 10px;
 }
 .headline {
-  font-size: 20px;
   width: 70%;
   font: normal 16px/1.5 "Source Sans Pro",sans-serif;
-  font-size: 44px;
+  font-size: 35px;
   font-weight: 300;
   line-height: 55px;
   color: #3b3b3b;

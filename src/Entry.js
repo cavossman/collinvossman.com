@@ -13,25 +13,27 @@ import Homepage from './Homepage/Homepage';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
+import Tools from './Tools/Tools'
 
 // ROUTING FOR ALL PAGES
-class App extends Component {
+class Entry extends Component {
   render() {
     return (
       <div className="App">
-      <Header />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={ Homepage } />
-          <Route exact path="/about" component={ About } />
-          <Route exact path="/projects" component={ Projects } />
-          <Route exact path="/contact" component={ Contact } />
-        </Switch>
-      </BrowserRouter>
-      <Footer />
+        <Header />
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={ Homepage } />
+              <Route exact path="/about" component={ About } />
+              <Route exact path="/projects" component={ Projects } />
+              <Route exact path="/contact" component={ Contact } />
+              <Route exact path="/tools" component={ Tools } />
+            </Switch>
+          </BrowserRouter>
+        <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default Entry;

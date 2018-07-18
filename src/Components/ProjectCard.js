@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import ReactFancyBox from 'react-fancybox';
 
 import './Components.css';
+import 'react-fancybox/lib/fancybox.css';
 
+
+// Override the styles for the thumbnail image.
+// Pull image out into it's own component?
 class ProjectCard extends Component {
   render() {
-    // var imageStyles = {
-    //   backgroundImage: 'url(' + this.props.image + ')',
-    //   height: '100px',
-    // };
-
     return (
       <div className="project-card">
         <div className="wrapper">
@@ -18,8 +18,11 @@ class ProjectCard extends Component {
               <span className="description"> { this.props.description }</span>
             </div>
             <div className="project-image">
-              { this.props.featuredImage && <img src={this.props.featuredImage} alt="" /> }
-              { this.props.secondaryImage && <img src={this.props.secondaryImage} alt="" /> }
+              { this.props.featuredImages &&
+                this.props.featuredImages.map(photo =>
+                  <ReactFancyBox key={photo} className="photo" image={photo} />
+                )
+              }
             </div>
           </div>
         </div>
