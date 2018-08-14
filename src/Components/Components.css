@@ -51,7 +51,6 @@
 .info-card {
   width: 700px;
   background-color: #fff;
-  border-radius: 3px;
   margin: 15px auto;
   text-align: left;
 }
@@ -101,7 +100,7 @@
   margin-top: 40px;
 }
 .project-image {
-  width: 50%;
+  width: 100%;
   min-width: 500px;
   display: block;
   margin: 0 auto;
@@ -147,4 +146,15 @@
   /* .info-card {
     width: 100%;
   } */
+}
+
+/* Override Fancybox */
+.react-fancybox {
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+  margin: 15px;
+}
+.image-box img:first-child { /* Hide the ugly fancybox close button */
+  display:none;
 }

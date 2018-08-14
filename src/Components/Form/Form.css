@@ -1,6 +1,5 @@
 .form {
   background-color: #fff;
-  border-radius: 4px;
   width: 50%;
   margin: 0 auto;
   max-width: 450px;
@@ -29,7 +28,6 @@
   display:inline-block;
   padding:0.35em 1.2em;
   border:0.1em solid #000;
-  border-radius: 3px;
   margin-top: 20px;
   box-sizing: border-box;
   text-decoration:none;
@@ -52,7 +50,6 @@ textarea {
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
 }
@@ -62,6 +59,5 @@ input[type="text"] {
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  border-radius: 4px;
   background-color: #f8f8f8;
 }

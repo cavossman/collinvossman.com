@@ -114,8 +114,8 @@ class Homepage extends Component {
         <div className="image-background">
           <div className="hero-image tinted"></div>
           <div className="hero-overlay name">
-            <h1>COLLIN VOSSMAN</h1>
-            <span>Web Developer | Eagle Scout | Wildcat</span>
+            <h1 className="text-border">COLLIN VOSSMAN</h1>
+            <span className="text-border">Web Developer | Eagle Scout | Wildcat</span>
           </div>
           <div className="hero-overlay">
             <div className={(isScrolling) ? 'read-more hidden' : 'read-more bounce'} onClick={ this.scrollPage }>
@@ -135,9 +135,9 @@ class Homepage extends Component {
             </p>
           </div>
         </div>
-        <div className="section container">
+        <div className="section container" style={{'padding-top':'0'}}>
           <h1 style={{'textAlign': 'left'}}>Toolbelt</h1>
-          <div style={{'textAlign': 'left', 'margin': '-15px 0 15px 15px'}}>Everyone needs tools to get the job done, these are mine.</div>
+          <div style={{'textAlign': 'left', 'margin': '-15px 0 15px 0'}}>Everyone needs tools to get the job done, these are some of mine.</div>
           <ToolTable tools={tool_list} />
         </div>
       </div>
