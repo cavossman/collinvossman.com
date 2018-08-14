@@ -3,7 +3,7 @@
   border-collapse: collapse;
 }
 .category-row {
-  border-bottom: 1px solid #000;
+
 }
 .category-row:last-child {
   border: none;
@@ -31,7 +31,7 @@
     min-height: 83px; /* same as .category-row line-height */
     float: left;
   }
-  .tool-table {
-
+  .category-row {
+    border-bottom: 1px solid #000;
   }
 }
