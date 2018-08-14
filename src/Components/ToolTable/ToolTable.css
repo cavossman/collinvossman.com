@@ -1,18 +1,18 @@
 .tool-table {
   background-color: #fff;
-  display: table;
-  margin: 0 auto;
   border-collapse: collapse;
 }
 .category-row {
-  display: table-row;
   border-bottom: 1px solid #000;
+}
+.category-row:last-child {
+  border: none;
 }
 .category-row span {
   font-size: 24px;
+  line-height: 83px; /* same as 777px tool-category min-height */
 }
 .tool-category {
-  display: table-cell;
   vertical-align: middle;
   background-color: #eee;
   padding: 20px;
@@ -20,5 +20,18 @@
 .tool {
   height: 100px;
   width: auto;
+  max-width: 300px;
   padding: 10px;
+}
+
+@media (min-width: 777px) {
+  .tool-category {
+    display: inline-block;
+    width: 100px;
+    min-height: 83px; /* same as .category-row line-height */
+    float: left;
+  }
+  .tool-table {
+
+  }
 }

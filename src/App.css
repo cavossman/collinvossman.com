@@ -69,3 +69,9 @@ h1 {
     display: none;
   }
 }
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 15px;
+  }
+}

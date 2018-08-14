@@ -1,6 +1,9 @@
 .homepage {
   height: auto;
 }
+#section {
+  padding: 100px 0;
+}
 .header-top a {
   color: #fff;
 }
@@ -27,7 +30,7 @@
   margin-bottom: 5px;
 }
 .name span {
-  
+
 }
 .read-more {
   width: fit-content;

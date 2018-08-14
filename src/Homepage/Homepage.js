@@ -1,10 +1,68 @@
 import React, { Component } from 'react';
+import ToolTable from '../Components/ToolTable/ToolTable';
 
 import './Homepage.css';
 import '../App.css';
 
 import collin from '../images/cv.jpg';
 
+
+// Frontend
+import angular from '../images/tools/angular.png';
+import react from '../images/tools/react.png';
+import html from '../images/tools/html5.png';
+import css from '../images/tools/css3.png';
+import less from '../images/tools/less.png';
+
+// Backend
+import mongodb from '../images/tools/mongodb.png';
+import node from '../images/tools/nodejs.png';
+import mysql from '../images/tools/mysql.png';
+
+// Utilities
+import git from '../images/tools/git.png';
+import atom from '../images/tools/atom.png';
+
+// OS
+import windows from '../images/tools/windows.png';
+import macos from '../images/tools/macos.png';
+import ubuntu from '../images/tools/ubuntu.svg';
+
+let tool_list = [
+  {
+    'category': 'Frontend',
+    'images': [
+      angular,
+      react,
+      html,
+      css,
+      less
+    ]
+  },
+  {
+    'category': 'Backend',
+    'images': [
+      node,
+      mongodb,
+      mysql
+    ]
+  },
+  {
+    'category': 'Utilities',
+    'images': [
+      git,
+      atom
+    ]
+  },
+  {
+    'category': 'OS',
+    'images': [
+      windows,
+      macos,
+      ubuntu
+    ]
+  }
+];
 
 /**
   * This utility function allows function calls to be debounced.
@@ -57,7 +115,7 @@ class Homepage extends Component {
           <div className="hero-image tinted"></div>
           <div className="hero-overlay name">
             <h1>COLLIN VOSSMAN</h1>
-            <span>Web Developer | Eagle Scout | Family Man</span>
+            <span>Web Developer | Eagle Scout | Wildcat</span>
           </div>
           <div className="hero-overlay">
             <div className={(isScrolling) ? 'read-more hidden' : 'read-more bounce'} onClick={ this.scrollPage }>
@@ -76,6 +134,11 @@ class Homepage extends Component {
               with APIs and enjoy both front end and back end development.  In my free time I enjoy spending time with my wife and our puppy.
             </p>
           </div>
+        </div>
+        <div className="section container">
+          <h1 style={{'textAlign': 'left'}}>Toolbelt</h1>
+          <div style={{'textAlign': 'left', 'margin': '-15px 0 15px 15px'}}>Everyone needs tools to get the job done, these are mine.</div>
+          <ToolTable tools={tool_list} />
         </div>
       </div>
     );

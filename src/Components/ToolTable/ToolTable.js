@@ -11,7 +11,9 @@ class ToolTable extends Component {
         {this.props.tools.map(function(tool, index) {
           return (
             <div className="category-row" key={index}>
-              <span className="tool-category">{tool.category}</span>
+              <div className="tool-category">
+                <span>{tool.category}</span>
+              </div>
               {tool.images.map(function(image, image_index){
                 return (
                   <img className="tool" key={image_index} src={image} alt="" />
