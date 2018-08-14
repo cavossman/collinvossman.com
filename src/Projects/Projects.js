@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 
+// COMPONENTS
 import ProjectCard from '../Components/ProjectCard';
 
-import './Projects.css';
-
+// IMAGES
 import mc from '../images/projects/micro-cloud/interface-buildings.png';
 import mm_map from '../images/projects/micro-map/campus_pins.png';
 import mm_building from '../images/projects/micro-map/building_view.png';
 
+// STYLESHEETS
+import './Projects.css';
+
 // TODO: Add map for web example of application.
+// TODO: Pull out information into json object and iterate through it - will help to make this all dynamic.
 class Projects extends Component {
   render() {
     return (

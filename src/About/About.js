@@ -12,7 +12,6 @@ import eagleScout from '../images/eagle-scout.png';
 import '../About/About.css';
 import '../Components/Components.css';
 
-// TODO: Create Skills page to display information on languages and such. NodeJS, JS (Frameworks: Angular and React), Mongo, Mongoose,
 // TODO: Create admin section to update the information and cards for this rather than make direct changes to the js file.
 class About extends Component {
   render() {
@@ -25,7 +24,7 @@ class About extends Component {
           </div>
           <div className="experience">
             <span className="section-title">Experience</span>
-            <InfoCard image={ bd } employer="Builder Designs" time="December 2017 - Present" title="Web Developer" description="<ul><li>Add features to existing websites.</li><li>Integrate analytic tracking (GTM, FB Pixel, etc)</li><li>Maintain droplets on Digital Ocean</li></ul>" />
+            <InfoCard image={ bd } employer="Builder Designs" time="December 2017 - Present" title="Web Developer" description="<ul><li>Add features to existing websites.</li><li>Integrate analytic tracking (GTM, FB Pixel, etc)</li><li>Maintain droplets on Digital Ocean</li><li>Maintain Builder Cloud - CMS used by Zillow and hundreds of homebuilders nationwide.</li></ul>" />
             <InfoCard image={ hyvee } employer="HyVee" time="July 2011 - December 2017" title="Frozen Clerk" description="<ul><li>Stock shelves</li><li>Inventory Management</li><li>Assist customers in the store and over the phone</li></ul>"/>
           </div>
           <div className="awards">

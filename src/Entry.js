@@ -15,6 +15,9 @@ import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Tools from './Tools/Tools'
 
+// 404 PAGE
+import NotFound from './Pages/NotFound/NotFound';
+
 // ROUTING FOR ALL PAGES
 class Entry extends Component {
   render() {
@@ -28,6 +31,7 @@ class Entry extends Component {
               <Route exact path="/projects" component={ Projects } />
               <Route exact path="/contact" component={ Contact } />
               <Route exact path="/tools" component={ Tools } />
+              <Route component={ NotFound } />
             </Switch>
           </BrowserRouter>
         <Footer />
