@@ -9,9 +9,10 @@
 .header-top {
   background-color: rgba(105, 105, 105, 0);
   transition: .2s ease;
-  padding: 30px 0px;
 }
-
+.header-right {
+  padding: 20px 0 0 0;
+}
 .header-normal {
   background-color: #fff;
   transition: .2s ease;
@@ -24,6 +25,10 @@
 
 .home-link {
   float: left;
+}
+.home-link img {
+  height: 50px;
+
 }
 
 

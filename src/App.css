@@ -42,7 +42,7 @@ a {
 }
 
 .tinted {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .btn {
@@ -54,19 +54,6 @@ h1 {
     z-index: 1;
     overflow: hidden;
     text-align: center;
-}
-h1:before, h1:after {
-    position: absolute;
-    top: 51%;
-    overflow: hidden;
-    width: 20%;
-    height: 3px;
-    content: '';
-    background-color: #000;
-}
-h1:before {
-    margin-left: -20%;
-    text-align: right;
 }
 .color {
     background-color: #ccc;
