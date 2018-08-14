@@ -135,7 +135,7 @@ class Homepage extends Component {
             </p>
           </div>
         </div>
-        <div className="section container" style={{'padding-top':'0'}}>
+        <div className="section container" style={{'paddingTop':'0'}}>
           <h1 style={{'textAlign': 'left'}}>Toolbelt</h1>
           <div style={{'textAlign': 'left', 'margin': '-15px 0 15px 0'}}>Everyone needs tools to get the job done, these are some of mine.</div>
           <ToolTable tools={tool_list} />
