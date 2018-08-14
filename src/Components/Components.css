@@ -130,7 +130,7 @@
   max-height: 300px;
 }
 .project-image img:nth-child(2) {
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 .headline {
   width: 70%;
