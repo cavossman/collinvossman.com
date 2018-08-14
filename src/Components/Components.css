@@ -139,15 +139,18 @@
   font-weight: 300;
   line-height: 55px;
   color: #3b3b3b;
+  width: 100%;
+  display: inline-block;
 }
 .detail {
   font-size: 14px;
   font-style: italic;
 }
-@media (max-width: 991px) {
-  /* .info-card {
-    width: 100%;
-  } */
+@media (max-width: 450px) {
+  .headline {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
 /* Override Fancybox */

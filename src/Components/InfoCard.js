@@ -16,7 +16,7 @@ class InfoCard extends Component {
         <div className="wrapper">
           <div className="info-image" style={ imageStyles }></div>
           <div className="info-details">
-            <span className="headline">{ this.props.employer }</span><br />
+            <span className="headline">{ this.props.employer }</span>
             <span>{ this.props.title }</span><br />
             <span className="detail">{ this.props.time }</span><br />
             <span className="description" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(this.props.description)}}></span>

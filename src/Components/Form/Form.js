@@ -27,7 +27,6 @@ class Form extends Component {
     this.setState({ [field]: value });
   }
 
-  //Posting to ZAP on every change.  Need to adjust to only submit on button click.
   handleSubmit(event) {
     if (this.validateForm()){
       console.log('submit');
@@ -44,6 +43,8 @@ class Form extends Component {
     } else {
       console.log('rejected');
     }
+    // Scroll to top of page after submission
+    window.scrollTo(0, 0);
   }
 
   // Need to improve validation.
