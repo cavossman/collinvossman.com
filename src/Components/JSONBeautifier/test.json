@@ -1,0 +1,537 @@
+{
+  "@type": "SingleFamilyResidence",
+  "_created": "Wed, 09 Aug 2017 16:40:34 GMT",
+  "_etag": "56e7bafe65a14c1540db5eb10cd11c0c5f428e87",
+  "_id": "598b3b024db0484aa455c4fd",
+  "_links": {
+    "self": {
+      "href": "homes/598b3b024db0484aa455c4fd",
+      "title": "home"
+    }
+  },
+  "_updated": "Thu, 02 Aug 2018 20:43:04 GMT",
+  "additional_rooms": 0,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Edmond",
+    "addressRegion": "OK",
+    "order": 16304,
+    "postalCode": "73013",
+    "streetAddress": "16304 Monarch Field Rd."
+  },
+  "bathsFull": 2,
+  "bathsHalf": 1,
+  "bdModifier": 0.911,
+  "beds": 3,
+  "builder": "59148d974db0485a5100542a",
+  "builder_id": "59148d974db0485a5100542a",
+  "containedIn": {
+    "@type": "GatedResidenceCommunity",
+    "_created": "Tue, 13 Jun 2017 02:28:21 GMT",
+    "_etag": "6f741870c5b0cbb81363a00d743d4737705f0821",
+    "_id": "593f4dc54db0481467c66a3a",
+    "_links": {
+      "self": {
+        "href": "communities/593f4dc54db0481467c66a3a",
+        "title": "community"
+      }
+    },
+    "_updated": "Wed, 15 Aug 2018 13:58:19 GMT",
+    "additionalProperties": {
+      "bd_agent": 0,
+      "bd_agents": [
+        {
+          "@type": "RealEstateAgent",
+          "GUID": "3e5b28ccd5d8755e89b6d29f68cdc52f",
+          "additionalProperties": {
+            "bd_agentApp": 0,
+            "bd_id": 12,
+            "bd_lat": 0,
+            "bd_lng": 0,
+            "bd_outOfCommunity": 0
+          },
+          "name": "Perry"
+        }
+      ],
+      "bd_area": 1,
+      "bd_featured": 0,
+      "bd_id": 9,
+      "bd_includeBrochure": 0,
+      "bd_lasso": 198016,
+      "bd_lasso_pid": 6960,
+      "bd_lotSizes": 0,
+      "bd_lotsAvailable": 0,
+      "bd_order": 0,
+      "bd_past": 0,
+      "bd_shareWithRealtors": 0,
+      "bd_show": 1,
+      "bd_showInBDX": 0,
+      "bd_status": "Active",
+      "bd_totalLots": 0
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressLocality": "Edmond",
+      "addressRegion": "OK",
+      "order": 0,
+      "postalCode": "73012",
+      "streetAddress": "Located on 164th St between Portland and MacArthur"
+    },
+    "agents": [
+      {
+        "@type": "RealEstateAgent",
+        "_created": "Thu, 13 Jul 2017 19:25:50 GMT",
+        "_etag": "5fe45bf6ec930a5968b50e541c712b88be096d80",
+        "_id": "5967c93e4db0484aa255b4d7",
+        "_links": {
+          "self": {
+            "href": "agents/5967c93e4db0484aa255b4d7",
+            "title": "agent"
+          }
+        },
+        "_updated": "Tue, 23 Jan 2018 20:27:30 GMT",
+        "address": {
+          "@type": "PostalAddress"
+        },
+        "builder": "59148d974db0485a5100542a",
+        "builder_id": "59148d974db0485a5100542a",
+        "creator_email": "bailey@builderdesigns.com",
+        "email": "Aj@mybeaconhome.com",
+        "modifier_email": "aislinn@mybeaconhome.com",
+        "name": "A.J."
+      }
+    ],
+    "area": {
+      "_id": "0urja9",
+      "description": "<p>Here is</p>",
+      "logo": {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/c3d0ef5cb03c1b601cabd4f4355ae8ed.jpeg"
+      },
+      "name": "Oklahoma City",
+      "$$hashKey": "object:46"
+    },
+    "authDomain": "mybeaconhome.com",
+    "bdConverterUnixTime": 1500842112,
+    "bdModifier": 0.621,
+    "builder": "59148d974db0485a5100542a",
+    "builder_id": "59148d974db0485a5100542a",
+    "description": "Monarch Ridge is a brand new community in Southwest Edmond. The neighborhood is home to native wetlands and generous greenbelt areas. With homes starting at 1600sf, Monarch Ridge is a family-oriented community featuring a gorgeous pond and walking trails.",
+    "directions": "",
+    "geoIndexed": [
+      -97.612674,
+      35.63821
+    ],
+    "gradeSchool": {
+      "address": "4704 Northwest 164th Street, \nEdmond, OK  73013",
+      "city": "Edmond",
+      "distance": "0.38",
+      "district": "Deer Creek School District",
+      "districtId": "148",
+      "districtNCESId": "4009570",
+      "enrollment": "482",
+      "fax": "(405) 359-3164",
+      "gradeRange": "PK-4",
+      "gsId": "413",
+      "gsRating": "10",
+      "lat": "35.636753",
+      "lon": "-97.60624",
+      "name": "Deer Creek Elementary School",
+      "ncesId": "400957000412",
+      "overviewLink": "https://www.greatschools.org/oklahoma/edmond/413-Deer-Creek-Elementary-School/?s_cid=gsapi",
+      "parentRating": "4",
+      "phone": "(405) 348-9100",
+      "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=413&s_cid=gsapi",
+      "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=413&s_cid=gsapi",
+      "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/413",
+      "state": "OK",
+      "type": "public",
+      "website": []
+    },
+    "highSchool": {
+      "address": "6101 Northwest 206th Street, \nEdmond, OK  73012",
+      "city": "Edmond",
+      "distance": "3.16",
+      "district": "Deer Creek School District",
+      "districtId": "148",
+      "districtNCESId": "4009570",
+      "enrollment": "1356",
+      "fax": "(405) 359-3179",
+      "gradeRange": "9-12",
+      "gsId": "414",
+      "gsRating": "10",
+      "lat": "35.682644",
+      "lon": "-97.624245",
+      "name": "Deer Creek High School",
+      "ncesId": "400957000413",
+      "overviewLink": "https://www.greatschools.org/oklahoma/edmond/414-Deer-Creek-High-School/?s_cid=gsapi",
+      "parentRating": "3",
+      "phone": "(405) 348-5720",
+      "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=414&s_cid=gsapi",
+      "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=414&s_cid=gsapi",
+      "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/414",
+      "state": "OK",
+      "type": "public",
+      "website": "http://www.deercreekschools.org/"
+    },
+    "hoa": [],
+    "lasso": {
+      "_id": "85430001299",
+      "lassoUid": "s)VqqCm$PX",
+      "projectId": "8543",
+      "questions": [
+        {
+          "answer": "198016",
+          "question": "44440"
+        }
+      ]
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "caption": "Screen Shot 2017-04-12 At 12.15.54 PM.",
+      "contentUrl": "https://s3.amazonaws.com/base-admin2/mybeaconhome.com/244568034075200_screen_shot_2017-04-12_at_12.15.54_pm.jpeg",
+      "name": "Screen Shot 2017-04-12 At 12.15.54 PM."
+    },
+    "middleSchool": {
+      "address": "21175 North Macarthur Boulevard, \nEdmond, OK  73012",
+      "city": "Edmond",
+      "distance": "3.48",
+      "district": "Deer Creek School District",
+      "districtId": "148",
+      "districtNCESId": "4009570",
+      "enrollment": "793",
+      "fax": "(405) 359-3163",
+      "gradeRange": "5-6",
+      "gsId": "4306",
+      "gsRating": "9",
+      "lat": "35.687885",
+      "lon": "-97.620766",
+      "name": "Deer Creek Intermediate School",
+      "ncesId": [],
+      "overviewLink": "https://www.greatschools.org/oklahoma/edmond/4306-Deer-Creek-Intermediate-School/?s_cid=gsapi",
+      "phone": "(405) 348-6100",
+      "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=4306&s_cid=gsapi",
+      "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=4306&s_cid=gsapi",
+      "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/4306",
+      "state": "OK",
+      "type": "public",
+      "website": "http://www.deercreekintermediate.org/"
+    },
+    "modifier_email": "julie@mybeaconhome.com",
+    "name": "Monarch Ridge",
+    "photos": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/ac8bf77866054814d28ba457c3f39151.jpeg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/53c2b46832d8454eab477d54151e9a58.jpeg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/77e4bb95f672f217424d254bbb07871d.jpeg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/66261e41cec98129bca4a62aa608a91d.jpeg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/69b0066b595799840238ec16cb7592b4.jpeg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://s3.amazonaws.com/buildercloud/79e2fdffcd3475d9b05e28e02b017404.jpeg"
+      }
+    ],
+    "priceHigh": 315000,
+    "priceLow": 220000,
+    "published": true,
+    "publishedFAB": true,
+    "schoolSettings": {
+      "disableGreatSchools": {
+        "checked": false
+      },
+      "manuallyEnter": {
+        "checked": false
+      }
+    },
+    "schools": [
+      {
+        "address": "4704 Northwest 164th Street, \nEdmond, OK  73013",
+        "city": "Edmond",
+        "distance": "0.38",
+        "district": "Deer Creek School District",
+        "districtId": "148",
+        "districtNCESId": "4009570",
+        "enrollment": "482",
+        "fax": "(405) 359-3164",
+        "gradeRange": "PK-4",
+        "gsId": "413",
+        "gsRating": "10",
+        "lat": "35.636753",
+        "lon": "-97.60624",
+        "name": "Deer Creek Elementary School",
+        "ncesId": "400957000412",
+        "overviewLink": "https://www.greatschools.org/oklahoma/edmond/413-Deer-Creek-Elementary-School/?s_cid=gsapi",
+        "parentRating": "4",
+        "phone": "(405) 348-9100",
+        "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=413&s_cid=gsapi",
+        "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=413&s_cid=gsapi",
+        "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/413",
+        "state": "OK",
+        "type": "public",
+        "website": []
+      },
+      {
+        "address": "21175 North Macarthur Boulevard, \nEdmond, OK  73012",
+        "city": "Edmond",
+        "distance": "3.48",
+        "district": "Deer Creek School District",
+        "districtId": "148",
+        "districtNCESId": "4009570",
+        "enrollment": "793",
+        "fax": "(405) 359-3163",
+        "gradeRange": "5-6",
+        "gsId": "4306",
+        "gsRating": "9",
+        "lat": "35.687885",
+        "lon": "-97.620766",
+        "name": "Deer Creek Intermediate School",
+        "ncesId": [],
+        "overviewLink": "https://www.greatschools.org/oklahoma/edmond/4306-Deer-Creek-Intermediate-School/?s_cid=gsapi",
+        "phone": "(405) 348-6100",
+        "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=4306&s_cid=gsapi",
+        "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=4306&s_cid=gsapi",
+        "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/4306",
+        "state": "OK",
+        "type": "public",
+        "website": "http://www.deercreekintermediate.org/"
+      },
+      {
+        "address": "6101 Northwest 206th Street, \nEdmond, OK  73012",
+        "city": "Edmond",
+        "distance": "3.16",
+        "district": "Deer Creek School District",
+        "districtId": "148",
+        "districtNCESId": "4009570",
+        "enrollment": "1356",
+        "fax": "(405) 359-3179",
+        "gradeRange": "9-12",
+        "gsId": "414",
+        "gsRating": "10",
+        "lat": "35.682644",
+        "lon": "-97.624245",
+        "name": "Deer Creek High School",
+        "ncesId": "400957000413",
+        "overviewLink": "https://www.greatschools.org/oklahoma/edmond/414-Deer-Creek-High-School/?s_cid=gsapi",
+        "parentRating": "3",
+        "phone": "(405) 348-5720",
+        "ratingsLink": "https://www.greatschools.org/school/rating.page?state=OK&id=414&s_cid=gsapi",
+        "reviewsLink": "https://www.greatschools.org/school/parentReviews.page?state=OK&id=414&s_cid=gsapi",
+        "schoolStatsLink": "https://www.greatschools.org/modperl/achievement/OK/414",
+        "state": "OK",
+        "type": "public",
+        "website": "http://www.deercreekschools.org/"
+      }
+    ],
+    "sharedName": "monarch-ridge",
+    "status": "Active",
+    "telephone": "(405) 423 - 1322",
+    "uniqueName": "monarch-ridge",
+    "$$hashKey": "object:81"
+  },
+  "creator_email": "bailey@builderdesigns.com",
+  "curlHandle": "Resource id #4",
+  "description": "Located in the boutique community of Monarch Ridge. This beautiful home features an upgraded elevation with real stone, stucco, and lush landscaping. The open living/ large dining/kitchen area features cedar accents throughout. The kitchen has tons of storage, quartz counters, custom wood hood vent, and under cabinet lighting. The cozy hearth room is located off of the living area and is a great additional space with a vaulted ceiling with a large cedar beam accent. This is the perfect space that can be used as a study, playroom, or additional living space. Spacious master suite is separate from the other bedrooms. Master bath includes extra-long 6’ soaker tub. The 2 car garage has an additional 7 feet for storage or a large workbench. This home is a must-see! Full sprinkler system, security system, HERS rated for low utility bills.",
+  "elevationPhotos": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/b70f1d8ee13e7bea89bd5401f230ea72.jpeg"
+    }
+  ],
+  "floorplanPhotos": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/bb0039e12ebd38db799046368ee65645.jpeg"
+    }
+  ],
+  "garages": 2,
+  "geoIndexed": [
+    -97.613456,
+    35.635624
+  ],
+  "green_banner": "PARADE HOME",
+  "home_features": [
+    "Flex/Hearth Room with Barn Doors",
+    "Oversized 2-Car Garage for Storage"
+  ],
+  "isLot": false,
+  "lot": "0",
+  "masterBedLocation": "down",
+  "modifier_email": "julie@mybeaconhome.com",
+  "moveInDate": "2017-11-30T06:00:00.000Z",
+  "openHouses": [],
+  "photos": [
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/4a2672b3024a8af08676a1d8a62c59b3.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/4ff3c59500ad767e84da738c94ec59ac.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/f626e8aa950fcbd2a1357d272089cac1.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/f030fc15e5fbdd14cdf5a293945535de.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/9b3f521ba6f0671573cd4eaeed51f36a.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/a016953b5ff9aef0d3a1f31db3a09459.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/3071588a9167a6dd1d0f2268b8178c5d.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/8b4ea645b785dd1b780039766fff09b1.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/8f837f05e520f7bd19153ec26f634e52.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/d02258d2132c94b6015077bf1b6c5a34.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/8e2f0cf3a756d858b65b147f1234b646.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/dd0dd1783586d548202fc003b01c84f8.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/a568610a803d3b5caaece61ffd88bc20.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/3148e7fac6318183628a12025e76e1ff.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/6625160f7aa24f1b4922418f44624321.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/762281b35c7cf953ac7093bde892fff5.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/1945784c819d20d6acf206c531398cb7.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/ead01cb5ada072d42a58512400f68cac.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/5c5d9b0645af8013e04067a034d20803.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/4acff136fb09dfd0d8eb9060d80defef.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/6ddeaa073831c5b6b8c57db783d51118.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/b15778ebe244821895198cad5b4b12f5.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/817128c4ffbcb670a5b716b72ea0bfa4.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/8293f2b3958394b0639dc7def62e6880.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/a76c30e76bbaacd825eab22163be4d65.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/61d6dd3301c71244dd4c35fe85644dfa.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/a3a422cdab70e448f376b416f68dc943.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/3f551394acf63a6a11ed5a7dce59193f.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/0142eb3b373dd79bbd59a60ff00026b0.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/6c4811040cd8d8361e58ba5b0972cefe.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/fe5038cc09d03f727db5f7dde4e72d85.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/9ce0caa5cf66020380c5d54b9be563b7.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/0b7748014134246e4633fbf1138575e4.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/67b7c375882db133d4a57f9c7b4d075f.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/a7f2974549dc0c1c5c3888c9f35aff92.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/9c08a70dce748f1d9289e9eaf6f57535.jpeg"
+    },
+    {
+      "@type": "ImageObject",
+      "contentUrl": "https://s3.amazonaws.com/buildercloud/772cd923eb8cb6671cf9cba7b80f1f80.jpeg"
+    }
+  ],
+  "plan": "595eca944db0484aa355b693",
+  "price": 295900,
+  "published": true,
+  "publishedFAB": true,
+  "sqft": 2188,
+  "status": "Active",
+  "tourUrl": "https://www.youtube.com/embed/X9mVKvPX0js",
+  "uniqueName": "16304-monarch-field-rd-edmond-ok",
+  "baths": "2.5",
+  "$$hashKey": "object:292"
+}

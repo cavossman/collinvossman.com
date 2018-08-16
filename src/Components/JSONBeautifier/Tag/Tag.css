@@ -1,0 +1,15 @@
+.key-tag {
+  color: #000;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+.tag-unselected {
+  background-color: #fff;
+}
+.tag-selected {
+  background-color: #91a2dc;
+}
