@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-import './Components.css';
+// IMAGES
+import initials from '../../images/initials.png';
+import initials_white from '../../images/initials-white.png';
 
-import initials from '../images/initials.png';
-import initials_white from '../images/initials-white.png';
+import './Header.css';
 
 /**
   * This utility function allows function calls to be debounced.

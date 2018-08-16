@@ -1,5 +1,0 @@
-Options -MultiViews
-Rewriteengine On
-RewriteCond % {REQUEST_FILENAME} !-f
-RewriteRule ^ index.html [QSA,L]
-

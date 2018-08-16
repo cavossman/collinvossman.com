@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-top {
+  background-color: rgba(105, 105, 105, 0);
+  transition: .2s ease;
+}
+.header-right {
+  padding: 20px 0 0 0;
+}
+.header-normal {
+  background-color: #fff;
+  transition: .2s ease;
+  padding: 10px 0px;
+}
+
+.header-normal a {
+  color: #000;
+}
+
+.home-link {
+  float: left;
+}
+.home-link img {
+  height: 50px;
+
+}

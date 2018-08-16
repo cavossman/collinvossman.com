@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DOMPurify from 'dompurify';
 
-import './Components.css';
+import './InfoCard.css';
 
 class InfoCard extends Component {
   render() {

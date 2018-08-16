@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactFancyBox from 'react-fancybox';
 
-import './Components.css';
+import './ProjectCard.css';
 import 'react-fancybox/lib/fancybox.css';
 
 

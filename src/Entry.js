@@ -5,15 +5,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 // PAGE COMPONENTS
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 // PAGE TEMPLATES
-import Homepage from './Homepage/Homepage';
-import About from './About/About';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
-import Tools from './Tools/Tools'
+import Homepage from './Pages/Homepage/Homepage';
+import About from './Pages/About/About';
+import Projects from './Pages/Projects/Projects';
+import Contact from './Pages/Contact/Contact';
+import Tools from './Pages/Tools/Tools';
 
 // 404 PAGE
 import NotFound from './Pages/NotFound/NotFound';

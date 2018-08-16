@@ -1,10 +1,10 @@
-// Dependencies
 import React, { Component } from 'react';
 import axios from 'axios';
-// Externals
-import Field from './Field';
-import './Form.css';
 
+// CUSTOM COMPONENTS
+import Field from './Field';
+
+import './Form.css';
 
 class Form extends Component {
   constructor(props) {

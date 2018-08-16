@@ -1,7 +1,7 @@
 .homepage {
   height: auto;
 }
-#section {
+#bio {
   padding: 100px 0 50px 0;
 }
 .header-top a {
@@ -12,7 +12,7 @@
   width: 100%;
   position: relative;
 
-  background-image: url('../images/homepage-bg.jpg');
+  background-image: url('../../images/homepage-bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -37,7 +37,6 @@
   margin: 0 auto;
 }
 
-/* first attempt to make cool bounce animation */
 .bounce:hover {
   position:fixed;
   left:50%;
@@ -84,4 +83,16 @@
   25%, 75% { bottom:5px; }
   50%      { bottom:10px; }
   100%     { bottom:0; }
+}
+
+
+.toolbelt {
+  padding-top: 0;
+}
+.toolbelt h1 {
+  text-align: left;
+}
+.toolbelt-description {
+  text-align: left;
+  margin: -15px 0 15px 0;
 }

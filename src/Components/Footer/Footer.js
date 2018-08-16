@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import './Components.css';
+// IMAGES
+import linkedIn from '../../images/icons/linkedIn.png';
+import github from '../../images/icons/github.png';
 
-import linkedIn from '../images/icons/linkedIn.png';
-import github from '../images/icons/github.png';
-
+import './Footer.css';
 
 class Header extends Component {
   render() {

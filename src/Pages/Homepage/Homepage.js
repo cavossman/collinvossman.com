@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
-import ToolTable from '../Components/ToolTable/ToolTable';
+
+// CUSTOM COMPONENTS
+import ToolTable from '../../Components/ToolTable/ToolTable';
+
+// IMAGES
+import collin from '../../images/cv.jpg';
 
 import './Homepage.css';
-import '../App.css';
-
-import collin from '../images/cv.jpg';
 
 
 // Frontend
-import angular from '../images/tools/angular.png';
-import react from '../images/tools/react.png';
-import html from '../images/tools/html5.png';
-import css from '../images/tools/css3.png';
-import less from '../images/tools/less.png';
+import angular from '../../images/tools/angular.png';
+import react from '../../images/tools/react.png';
+import html from '../../images/tools/html5.png';
+import css from '../../images/tools/css3.png';
+import less from '../../images/tools/less.png';
 
 // Backend
-import mongodb from '../images/tools/mongodb.png';
-import node from '../images/tools/nodejs.png';
-import mysql from '../images/tools/mysql.png';
+import mongodb from '../../images/tools/mongodb.png';
+import node from '../../images/tools/nodejs.png';
+import mysql from '../../images/tools/mysql.png';
 
 // Utilities
-import git from '../images/tools/git.png';
-import atom from '../images/tools/atom.png';
+import git from '../../images/tools/git.png';
+import atom from '../../images/tools/atom.png';
 
 // OS
-import windows from '../images/tools/windows.png';
-import macos from '../images/tools/macos.png';
-import ubuntu from '../images/tools/ubuntu.svg';
+import windows from '../../images/tools/windows.png';
+import macos from '../../images/tools/macos.png';
+import ubuntu from '../../images/tools/ubuntu.svg';
 
 let tool_list = [
   {
@@ -82,26 +84,29 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      scrollPositionY: 0,
+      scrollPositionY: 0
     }
   }
 
+  // Create 'scroll' event
   componentDidMount() {
     return window.addEventListener('scroll', debounce(this.handleScroll, 1))
   }
 
+  // Remove 'scroll' event when leaving the page
   componentWillUnmount() {
     return window.removeEventListener('scroll', debounce(this.handleScroll, 1))
   }
 
+  // Sets the 'scrollPositionY' based upon the distance down the page
   handleScroll = () => {
     const scrollPositionY = +window.scrollY
     return this.setState({ scrollPositionY })
   }
 
-
+  // Scrolls below the fold of the page on 'Read More' click
   scrollPage() {
-    document.getElementById('section').scrollIntoView({
+    document.getElementById('bio').scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
@@ -124,7 +129,7 @@ class Homepage extends Component {
             </div>
           </div>
         </div>
-        <div className="section" id="section">
+        <section id="bio">
           <img src={ collin } alt="Collin Vossman" className="cv-image" />
           <div className="overview-container">
             <p>
@@ -134,12 +139,12 @@ class Homepage extends Component {
               with APIs and enjoy both front end and back end development.  In my free time I enjoy spending time with my wife and our puppy.
             </p>
           </div>
-        </div>
-        <div className="section container" style={{'paddingTop':'0'}}>
-          <h1 style={{'textAlign': 'left'}}>Toolbelt</h1>
-          <div style={{'textAlign': 'left', 'margin': '-15px 0 15px 0'}}>Everyone needs tools to get the job done, these are some of mine.</div>
-          <ToolTable tools={tool_list} />
-        </div>
+        </section>
+        <section className="container toolbelt">
+          <h1>Toolbelt</h1>
+          <div className="toolbelt-description">Everyone needs tools to get the job done, these are some of mine.</div>
+          <ToolTable tools={ tool_list } />
+        </section>
       </div>
     );
   }

@@ -1,22 +1,20 @@
-// TODO: Move out of table and make more responsive
-// TODO: Add alt tags to the tool list object and display on website
-
 import React, { Component } from 'react';
 
 import './ToolTable.css';
+
 class ToolTable extends Component {
   render() {
     return (
       <div className="tool-table">
-        {this.props.tools.map(function(tool, index) {
+        {this.props.tools.map((tool, index) => {
           return (
-            <div className="category-row" key={index}>
+            <div className="category-row" key={ index }>
               <div className="tool-category">
-                <span>{tool.category}</span>
+                <span>{ tool.category }</span>
               </div>
-              {tool.images.map(function(image, image_index){
+              {tool.images.map((image, image_index) => {
                 return (
-                  <img className="tool" key={image_index} src={image} alt="" />
+                  <img className="tool" key={ image_index } src={ image } alt="" />
                 );
               })}
             </div>

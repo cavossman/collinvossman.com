@@ -1,0 +1,13 @@
+.footer {
+  background-color: #3c3c3c;
+  color: #fff;
+  padding: 20px;
+  height: 100px;
+}
+.social-links a {
+  padding: 0px;
+}
+.social-links img {
+  height: 50px;
+  margin: 5px;
+}
