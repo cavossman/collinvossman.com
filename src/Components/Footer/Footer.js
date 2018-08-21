@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 // IMAGES
 import linkedIn from '../../images/icons/linkedIn.png';
 import github from '../../images/icons/github.png';
+import resume from '../../images/resume.pdf';
+
 
 import './Footer.css';
 
@@ -16,6 +18,13 @@ class Header extends Component {
             <a href="https://github.com/cavossman" rel="noopener noreferrer" target="_blank"><img src={ github } alt="GitHub Profile" /></a>
           </div>
           <span>&#169; { new Date().getFullYear() }</span>
+          <div className="submenu">
+            <a href="/projects">Projects</a>
+            <a href="/about">About</a>
+            <a href="/tools">Tools</a>
+            <a href="/contact">Contact</a>
+            <a href={ resume } target="_blank">Resume</a>
+          </div>
         </div>
       </footer>
     );

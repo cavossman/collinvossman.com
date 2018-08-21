@@ -2,7 +2,7 @@
   background-color: #3c3c3c;
   color: #fff;
   padding: 20px;
-  height: 100px;
+  height: auto;
 }
 .social-links a {
   padding: 0px;
@@ -10,4 +10,15 @@
 .social-links img {
   height: 50px;
   margin: 5px;
+}
+.submenu {
+  padding: 50px 0 10px 0;
+}
+.submenu a {
+  color: #fff;
+  padding: 5px 20px;
+  border-right: 1px solid #fff;
+}
+.submenu a:last-child {
+  border: none;
 }
