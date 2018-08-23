@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import JSONBeautifier from '../../Components/JSONBeautifier/JSONBeautifier';
+import JSONVisualizer from '../../Components/JSONVisualizer/JSONVisualizer';
 
 import './Tools.css';
 
@@ -9,7 +9,7 @@ class Tools extends Component {
   render() {
     return (
       <div className="page">
-        <JSONBeautifier />
+        <JSONVisualizer />
       </div>
     );
   }
