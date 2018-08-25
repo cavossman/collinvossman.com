@@ -6,6 +6,7 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
+  text-align: left;
 }
 .tag-unselected {
   background-color: #fff;
@@ -15,14 +16,13 @@
 }
 .preview {
   position: absolute;
-  left: -10px;
+  left: 0;
   top: calc(100% + 3px);
   padding: 5px;
   border: 1px solid #000;
   border-radius: 3px;
   z-index: 10;
   background-color: #fff;
-
 }
 .preview.tag-selected {
   display: block;

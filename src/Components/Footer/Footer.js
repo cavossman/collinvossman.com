@@ -8,7 +8,7 @@ import resume from '../../images/resume.pdf';
 
 import './Footer.css';
 
-class Header extends Component {
+class Footer extends Component {
   render() {
     return (
       <footer className="footer">
@@ -31,4 +31,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Footer;

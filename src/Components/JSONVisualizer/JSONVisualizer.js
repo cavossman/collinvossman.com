@@ -12,11 +12,16 @@ class JSONVisualizer extends Component {
       error: null,
       help: false,
       results: null,
+      disableClear: true,
+      disableParse: true,
+      disableEnhance: true,
       displayResults: false
     };
     this.registerTags = this.registerTags.bind(this);
     this.displaySelectedKeyValuePairs = this.displaySelectedKeyValuePairs.bind(this);
+    this.clearJSON = this.clearJSON.bind(this);
 
+    this.handleJSONUpdate = this.handleJSONUpdate.bind(this);
     this.handleShowTooltip = this.handleShowTooltip.bind(this);
     this.handleHideTooltip = this.handleHideTooltip.bind(this);
     this.dismissWarning = this.dismissWarning.bind(this);
@@ -35,7 +40,29 @@ class JSONVisualizer extends Component {
   registerTags() {
     let input = this.refs._input.value;
     if (!!input) {
-      this.parseInput(input);
+      // setState is asynchronous so call parseInput after tags array is empty.
+      this.setState({'tags': []}, () => {
+        this.parseInput(input);
+      });
+    }
+  }
+
+  clearJSON() {
+    this.refs._input.value = '';
+    this.setState({'tags': []});
+    this.setState({'disableEnhance': true});
+    this.setState({'disableParse': true});
+    this.setState({'disableClear': true});
+  }
+
+  handleJSONUpdate() {
+    if (this.refs._input.value.length > 0) {
+      this.setState({'disableParse': false});
+      this.setState({'disableClear': false});
+    }
+    else {
+      this.setState({'disableParse': true});
+      this.setState({'disableClear': true});
     }
   }
 
@@ -57,12 +84,14 @@ class JSONVisualizer extends Component {
         obj[key] = tag.value;
 
         results = {...results, ...obj};
-        this.setState({'results': results});
       }
-    })
+    });
+    results = JSON.stringify(results) === '{}'  ? 'You have not selected any keys' : results;
+    this.setState({'results': results});
   }
 
-  // may be able to change map to forEach?
+  // BUG: When pressing Parse a second time without clearing Enhance only displays null
+  // Tags on the right aren't refreshing each time parse is hit.
   parseInput(input) {
     try {
       let parsedInput = JSON.parse(input);
@@ -77,8 +106,8 @@ class JSONVisualizer extends Component {
                     };
         tagsArr.push(obj);
       });
-      // let values = Object.values(parseInput);
       this.setState({'tags': tagsArr});
+      this.setState({'disableEnhance': false});
     } catch (error) {
       switch (error.name) {
         case 'SyntaxError':
@@ -90,55 +119,61 @@ class JSONVisualizer extends Component {
     }
   }
 
-  // TODO: Disable buttons based upon state.
   render() {
-    const tags = this.state.tags;
-    const help = this.state.help;
-    const error = this.state.error;
-    const displayResults = this.state.displayResults;
+    const { tags, help, error, displayResults } = this.state;
+    const { disableClear, disableParse, disableEnhance } = this.state;
     return (
-      <div className="JSONBeautifier">
+      <div className="JSONVisualizer">
         <h1>JSON Visualizer</h1>
         <div className="proj-container">
-          <textarea className="input" spellCheck="false" placeholder="Paste your JSON object here." ref="_input" />
-          <div className="selector">
-            <h2>Select Keys</h2>
-            <div className="key-container">
-              { tags.map((tag, index) => {
-                  return <Tag tag={ tag } key={ index } />
-                })
-              }
+          <div className="JSONContainer">
+            <textarea id="input" className="input" spellCheck="false" placeholder="Paste your JSON object here." ref="_input" onChange={ this.handleJSONUpdate }/>
+            <div className="selector">
+              <div className="selector-head">
+                <h2>Select Keys</h2>
+              </div>
+              <div className="key-container">
+                { tags.map((tag, index) => {
+                    return <Tag tag={ tag } key={ index } />
+                  })
+                }
+              </div>
             </div>
           </div>
-          <div className="run-script" onClick={ this.registerTags }>
-            Parse
-          </div>
-          <div className="run-script" onClick={ this.displaySelectedKeyValuePairs }>
-            Enhance
-          </div>
-          <div className="help" onMouseEnter={ this.handleShowTooltip } onMouseLeave={ this.handleHideTooltip }>
-            <span role="img" aria-label="Question Mark">&#10068;</span>
-            { help &&
-              <div className="tooltip">
-                TIPS:<br />
-                1. Paste JSON object on the left<br />
-                2. Click parse<br />
-                3. Select keys on the right<br />
-                4. Click enhance<br />
-                5. Ignore bugs for the time being<br />
-              </div>
-            }
+          <div className="scripts-container">
+            <div className={ 'run-script prevent-select ' + (disableClear ? 'disabled' : '') }disabled={ this.state.disableClear } onClick={ this.clearJSON }>
+              Clear
+            </div>
+            <div className={ 'run-script prevent-select ' + (disableParse ? 'disabled' : '') }disabled={ this.state.disableParse } onClick={ this.registerTags }>
+              Parse
+            </div>
+            <div className={ 'run-script prevent-select ' + (disableEnhance ? 'disabled' : '') }disabled={ this.state.disableEnhance } onClick={ this.displaySelectedKeyValuePairs }>
+              Enhance
+            </div>
+            <div className="help prevent-select" onMouseEnter={ this.handleShowTooltip } onMouseLeave={ this.handleHideTooltip }>
+              <span role="img" aria-label="Question Mark">&#10068;</span>
+              { help &&
+                <div className="tooltip">
+                  TIPS:<br />
+                  1. Paste JSON object on the left<br />
+                  2. Click parse<br />
+                  3. Select keys on the right<br />
+                  4. Click enhance<br />
+                  5. Ignore bugs for the time being<br />
+                </div>
+              }
+            </div>
           </div>
 
           { error &&
             <div className="error">
-              <div className="dismiss" onClick={ this.dismissWarning } >&#10006;</div>
+              <div className="dismiss prevent-select" onClick={ this.dismissWarning } >&#10006;</div>
               <h3>There is an error in your syntax. Please try again</h3>
             </div>
           }
           { displayResults &&
             <div className="results">
-              <div className="dismiss" onClick={ this.dismissResults } >&#10006;</div>
+              <div className="dismiss prevent-select" onClick={ this.dismissResults } >&#10006;</div>
               <pre>{ JSON.stringify(this.state.results, null, 2) }</pre>
             </div>
           }
