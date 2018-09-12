@@ -36,7 +36,7 @@ class Form extends Component {
         headers : {
           'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
         },
-        url: 'https://hooks.zapier.com/hooks/catch/3415210/w1evv1/',
+        url: 'https://hooks.zapier.com/hooks/catch/3768568/qwli1q/',
         data: this.state
       });
       this.setState({'submitted': true});
