@@ -1,0 +1,37 @@
+.tool-table {
+  background-color: #fff;
+  border-collapse: collapse;
+}
+.category-row {
+
+}
+.category-row:last-child {
+  border: none;
+}
+.category-row span {
+  font-size: 24px;
+  line-height: 83px; /* same as 777px tool-category min-height */
+}
+.tool-category {
+  vertical-align: middle;
+  background-color: #eee;
+  padding: 20px;
+}
+.tool {
+  height: 100px;
+  width: auto;
+  max-width: 300px;
+  padding: 10px;
+}
+
+@media (min-width: 777px) {
+  .tool-category {
+    display: inline-block;
+    width: 100px;
+    min-height: 83px; /* same as .category-row line-height */
+    float: left;
+  }
+  .category-row {
+    border-bottom: 1px solid #000;
+  }
+}
