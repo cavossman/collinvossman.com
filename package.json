@@ -1,24 +1,29 @@
 {
   "name": "collinvossman.com",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.18.0",
-    "dompurify": "^1.0.7",
-    "dotenv": "^6.0.0",
-    "less": "^3.8.1",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-fancybox": "^0.2.3",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4"
-  },
+  "description": "Website for Collin Vossman",
+  "main": "src/index.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "run-build": "serve -s build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "build": "react-scripts build"
+  },
+  "author": "Collin Vossman",
+  "license": "ISC",
+  "dependencies": {
+    "emotion": "^10.0.4",
+    "lodash": "^4.17.11",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.1",
+    "tinycolor2": "^1.4.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
