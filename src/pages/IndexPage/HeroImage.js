@@ -74,8 +74,8 @@ function HeroImage() {
     <div className={styles}>
       <div className="HeroImage"></div>
       <div className="HeroImage_title">
-        <h1>COLLIN VOSSMAN</h1>
-        <span>Web Developer | Eagle Scout | Wildcat</span>
+        {/* <h1>COLLIN VOSSMAN</h1>
+        <span>Web Developer | Eagle Scout | Wildcat</span> */}
       </div>
       <div className="HeroImage_overlay">
         <div className="HeroImage_scroll" onClick={() => smoothScrollById('bio') }>

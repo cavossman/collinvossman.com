@@ -10,6 +10,7 @@
   "author": "Collin Vossman",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "emotion": "^10.0.4",
     "lodash": "^4.17.11",
     "react": "^16.6.3",

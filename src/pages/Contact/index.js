@@ -1,10 +1,11 @@
 import React from 'react';
 import PageWrapper from '../../components/PageWrapper';
+import FormSection from './FormSection';
 
 function Contact() {
   return (
     <PageWrapper>
-      contact page
+      <FormSection />
     </PageWrapper>
   );
 }

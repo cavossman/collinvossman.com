@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'emotion';
 import { colors } from '../styles';
-// import Header from './Header';
-// import Footer from './Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 const defaultPageStyles = css`
   background-color: ${colors.color1};
@@ -12,9 +12,9 @@ const defaultPageStyles = css`
 function PageWrapper({ children, className }) {
   return (
     <div className={css`${className}; ${defaultPageStyles}`}>
-      {/* <Header /> */}
+      <Header />
       { children }
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
