@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { css } from 'emotion';
+import { colors } from '../styles';
 import { debounce } from './Utilities';
 
 const styles = css`
@@ -13,10 +14,13 @@ const styles = css`
 
     top: 0px;
     width: 100%;
-    z-index: 100;
+    z-index: 10;
     transition: 0.3s ease;
     a {
       color: #000;
+      &:hover {
+        color: ${colors.color2};
+      }
     }
     &.top {
       background-position: left bottom;
