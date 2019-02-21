@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { css } from 'emotion';
 import { colors } from '../styles';
-import { debounce } from './Utilities';
 
 const styles = css`
   .Header {
@@ -65,11 +64,11 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    return window.addEventListener('scroll', debounce(this.handleScroll, 1));
+    return window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    return window.removeEventListener('scroll', debounce(this.handleScroll, 1));
+    return window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
@@ -85,7 +84,7 @@ class Header extends React.Component {
           <div className="container">
             <div className="Header_inner">
               <Link to="/" className="Header_logo">
-                <img src={(isScrolling) ? '/images/initials.png' : '/images/initials-white.png'} alt="" />
+                <img src={ (isScrolling) ? '/images/initials.png' : '/images/initials-white.png' } alt="" />
               </Link>
               <div className="Header_navigation">
                 <Link to="projects" className="btn">Projects</Link>

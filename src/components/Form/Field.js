@@ -9,15 +9,15 @@ const Field = (props) => (
   <div className="form-group">
     <label>{props.label}</label>
 
-    { props.textarea &&
+    { props.type === 'textarea' &&
       <textarea onChange={props.onChange} value={props.value} />
     }
 
-    { !props.textarea &&
+    { props.type !== 'textarea' &&
       <input
-        onChange={props.onChange}
-        type={props.textarea ? 'textarea' : 'text'}
-        value={props.value}
+        onChange={ props.onChange }
+        type={ props.type }
+        value={ props.value }
       />
     }
   </div>

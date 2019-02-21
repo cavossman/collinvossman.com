@@ -30,7 +30,7 @@ class IndexPage extends React.Component {
         {
           loading &&
           <LoadAnimation
-            finishedLoading={this.finishedLoading}
+            finishedLoading={ this.finishedLoading }
           />
         }
         <HeroImage />

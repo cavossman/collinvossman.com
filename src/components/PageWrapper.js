@@ -11,7 +11,7 @@ const defaultPageStyles = css`
 
 function PageWrapper({ children, className }) {
   return (
-    <div className={css`${className}; ${defaultPageStyles}`}>
+    <div className={ css`${className} ${defaultPageStyles}` }>
       <Header />
       { children }
       <Footer />
