@@ -1,8 +1,161 @@
 import React, { Component } from 'react';
-
+import { css } from 'emotion';
 import Tag from './Tag/Tag';
 
-import './JSONVisualizer.css';
+const styles = css`
+  position: relative;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+    .JSONBeautifier {
+      margin: 0 15px;
+    }
+  }
+  .proj-container {
+    position: relative;
+    height: auto;
+    border: 3px solid #333;
+  }
+  .JSONContainer {
+    height: 600px;
+  }
+  .input {
+    border: none;
+    background: #333;
+    color: #696;
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+    resize: none;
+    padding: 12px;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .input:focus::-webkit-input-placeholder { color:transparent; }
+  .input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  .input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  .input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+  .scripts-container {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+  .run-script {
+    color: #000;
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    border-left: 1px solid #000;
+  }
+  .run-script:nth-last-child(2) {
+    border-right: 1px solid #000;
+  }
+  .run-script:hover {
+    background-color: #b1b1b1;
+    padding-bottom: 17px;
+    border-bottom: 3px solid red;
+  }
+  .run-script img {
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 6px;
+  }
+
+  .selector {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: scroll;
+  }
+  .selector-head {
+
+  }
+  .selector-head h2 {
+    margin: 10px;
+  }
+
+  .key-container {
+    margin: 0;
+    height: 550px;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar {
+      display: none;
+  }
+  .error {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+    background-color: #9c4747;
+    color: #fff;
+    z-index: 10;
+  }
+  .error h3 {
+    font-size: 36px;
+    padding: 200px 0;
+  }
+
+  .help {
+    background-color: #333;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 10px 12px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    bottom: 7px;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    background-color: #fff;
+    width: 250px;
+    padding: 20px;
+    color: #000;
+    z-index: 30;
+    text-align: left;
+    border: 1px solid #000;
+  }
+
+  .results {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    color: #696;
+    z-index: 10;
+    overflow-y: scroll;
+  }
+  .results h3 {
+    font-size: 36px;
+    padding: 200px 0;
+  }
+  .results pre {
+    max-width: 100%;
+  }
+  .dismiss {
+    cursor: pointer;
+    float: right;
+    font-size: 40px;
+    margin-right: 15px;
+  }
+  .disabled {
+    pointer-events: none;
+    background-color: #e2e2e2 !important;
+  }
+`;
 
 class JSONVisualizer extends Component {
   constructor(props) {
@@ -123,11 +276,11 @@ class JSONVisualizer extends Component {
     const { tags, help, error, displayResults } = this.state;
     const { disableClear, disableParse, disableEnhance } = this.state;
     return (
-      <div className="JSONVisualizer">
+      <div className={ styles }>
         <h1>JSON Visualizer</h1>
         <div className="proj-container">
           <div className="JSONContainer">
-            <textarea id="input" className="input" spellCheck="false" placeholder="Paste your JSON object here." ref="_input" onChange={ this.handleJSONUpdate }/>
+            <textarea id="input" className="input" spellCheck="false" placeholder="Paste your JSON object here." ref="_input" onChange={ this.handleJSONUpdate } />
             <div className="selector">
               <div className="selector-head">
                 <h2>Select Keys</h2>

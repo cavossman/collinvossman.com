@@ -1,8 +1,43 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { css } from 'emotion';
 
-import './Tag.css';
+const styles = css`
+  .tag {
+    color: #000;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-align: left;  
+  }
 
-class Tag extends Component {
+  .tag-unselected {
+    background-color: #fff;
+  }
+  .tag-selected {
+    background-color: #91a2dc;
+  }
+  .preview {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 3px);
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .preview.tag-selected {
+    display: block;
+  }
+  .preview.tag-unselected {
+    display: none;
+  }
+`;
+
+class Tag extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +80,7 @@ class Tag extends Component {
     const title = this.state.tag.key;
     const value = this.state.tag.value;
     return (
-      <div className="tag">
+      <div className={ styles }>
         <div className={ 'preview ' + (this.state.mouseOver ? 'tag-selected' : 'tag-unselected') } >
           { this.beautifyText(value) }
         </div>

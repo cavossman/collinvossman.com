@@ -33,9 +33,11 @@ const styles = css`
         color: #fff;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 5px 20px;
+        padding: 0px 10px;
         border-right: 1px solid #fff;
         display: inline-block;
+        letter-spacing: 0.8px;
+
         &:last-child {
           border: none;
         }
@@ -50,6 +52,9 @@ const styles = css`
       flex-direction: column;
       .footer__submenu {
         padding: 50px 0 10px 0;
+        a {
+          padding: 5px 20px;
+        }
       }
     }
   }
@@ -78,9 +83,9 @@ function Footer() {
             <span>&#169; { new Date().getFullYear() }</span>
           </div>
           <div className="footer__submenu">
-            <a href="/projects">Projects</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
+            <a href="/tools">Tools</a>
             <a href="/images/resume.pdf" target="_blank">Resume</a>
           </div>
         </div>

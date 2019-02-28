@@ -87,7 +87,6 @@ class Header extends React.Component {
                 <img src={ (isScrolling) ? '/images/initials.png' : '/images/initials-white.png' } alt="" />
               </Link>
               <div className="Header_navigation">
-                <Link to="projects" className="btn">Projects</Link>
                 <Link to="about" className="btn">About</Link>
                 <Link to="contact" className="btn">Contact</Link>
               </div>

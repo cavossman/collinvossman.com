@@ -4,7 +4,6 @@ import './styles';
 import Index from './pages/IndexPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Projects from './pages/Projects';
 import Tools from './pages/Tools';
 
 function Entry() {
@@ -14,7 +13,6 @@ function Entry() {
         <Route name="index" exact path="/" component={ Index } />
         <Route name="about" exact path="/about" component={ About } />
         <Route name="contact" exact path="/contact" component={ Contact } />
-        <Route name="projects" exact path="/projects" component={ Projects } />
         <Route name="tools" exact path="/tools" component={ Tools } />
       </Switch>
     </BrowserRouter>
