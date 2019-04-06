@@ -9,7 +9,7 @@ const projects = [
     title: 'mag.collinvossman.com',
     description: 'Website built using Wordpress for updating content.  Utilizes React and the Wordpress REST API.',
     images: [
-      '/images/projects/mag/homepage.png',
+      '/images/projects/mag/mag.png',
       '/images/projects/mag/mag.gif',
     ],
     link: 'https://mag.collinvossman.com'

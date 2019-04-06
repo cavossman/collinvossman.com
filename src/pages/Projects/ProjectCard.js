@@ -26,8 +26,7 @@ const styles = css`
 
         .headline {
           width: 70%;
-          font: normal 16px/1.5 "Source Sans Pro",sans-serif;
-          font-size: 35px;
+          font: normal 30px/1.5 "Source Sans Pro",sans-serif;
           font-weight: 300;
           line-height: 55px;
           color: #3b3b3b;
@@ -38,7 +37,6 @@ const styles = css`
 
       &-image {
         width: 100%;
-        min-width: 500px;
         display: block;
         margin: 0 auto;
         padding-top: 15px;
@@ -46,8 +44,24 @@ const styles = css`
       }
     }
   }
+  @media (min-width: 992px) {
+    .pc {
+      &__inner {
+        &-details {
+
+          .headline {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+
 
   @media (max-width: 600px) {
+    .headline {
+      font-size: 30px;
+    }
     .project-image {
       width: 100%;
       min-width: 1px;
@@ -71,6 +85,9 @@ const customFancyboxStyles = css`
   .thumbnail {
     margin: 0 10px;
     border: 1px solid ${colors.color3};
+  }
+  @media (max-width:992px) {
+    margin-bottom: 20px;
   }
 `;
 

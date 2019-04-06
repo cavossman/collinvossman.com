@@ -38,6 +38,11 @@ const styles = css`
         .ec__dates {
           font-style: italic;
         }
+        .ec__description {
+          ul {
+            padding-left: 20px;            
+          }
+        }
       }
     }
   }
@@ -65,6 +70,12 @@ const styles = css`
           .ec__title {
             font-size: 1.2rem;
             letter-spacing: 0.6px;
+          }
+
+          .ec__description {
+            ul {
+              padding-left: 40px;
+            }
           }
         }
       }

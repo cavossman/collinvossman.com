@@ -35,6 +35,7 @@ const styles = css`
         text-decoration: none;
         text-transform: uppercase;
         padding: 0px 10px;
+        border-radius: 0;
         border-right: 1px solid #fff;
         display: inline-block;
         letter-spacing: 0.8px;
@@ -76,7 +77,7 @@ function Footer() {
         <div className="footer__inner">
           <div className="footer__social">
             <a href="https://www.linkedin.com/in/collin-vossman/" rel="noopener noreferrer" target="_blank">
-              <img src="/images/icons/linkedin.png" alt="LinkedIn Profile" />
+              <img src="/images/icons/linked-in.png" alt="LinkedIn Profile" />
             </a>
             <a href="https://github.com/cavossman" rel="noopener noreferrer" target="_blank">
               <img src="/images/icons/github.png" alt="GitHub Profile" />

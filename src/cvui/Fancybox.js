@@ -31,16 +31,15 @@ const defaultStyles = css`
       right: 0;
       bottom: 0;
 
-      max-height: 700px;
-      max-width: 1200px;
+      overflow: hidden;
+      max-height: 620px;
       width: fit-content;
       height: fit-content;
 
       img {
-        width: auto;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        max-width: calc(100% - 30px);
       }
     }
   }
@@ -70,11 +69,20 @@ const defaultStyles = css`
     -ms-user-select: none;
     user-select: none;
   }
-  @media (max-width: 776px) {
-    .fancybox-open img {
-      max-height: 90%;
-      height: auto;
-      width: 100%;
+
+  @media (min-width: 992px) {
+    .fancybox-open {
+      .fancy-photo {
+        max-height: 700px;
+        max-width: 1200px;
+
+        img {
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
     }
   }
 `;
