@@ -15,6 +15,7 @@ const styles = css`
     width: 100%;
     z-index: 10;
     transition: 0.3s ease;
+    border-bottom: 1px solid ${colors.color1};
     a {
       color: #000;
       &:hover {
@@ -23,6 +24,7 @@ const styles = css`
     }
     &.top {
       background-position: left bottom;
+      border-bottom: none;
       a {
         color: #fff;
       }
@@ -87,6 +89,7 @@ class Header extends React.Component {
                 <img src={ (isScrolling) ? '/images/initials.png' : '/images/initials-white.png' } alt="" />
               </Link>
               <div className="Header_navigation">
+                <Link to="projects" className="btn">Projects</Link>
                 <Link to="about" className="btn">About</Link>
                 <Link to="contact" className="btn">Contact</Link>
               </div>

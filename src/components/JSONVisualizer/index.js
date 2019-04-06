@@ -52,9 +52,9 @@ const styles = css`
     display: inline-block;
     border-left: 1px solid #000;
   }
-  .run-script:nth-last-child(2) {
+  ${'' /* .run-script:nth-last-child(2) {
     border-right: 1px solid #000;
-  }
+  } */}
   .run-script:hover {
     background-color: #b1b1b1;
     padding-bottom: 17px;

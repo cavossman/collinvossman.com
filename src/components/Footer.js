@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { css } from 'emotion';
 import { colors } from '../styles';
 
@@ -38,7 +39,7 @@ const styles = css`
         display: inline-block;
         letter-spacing: 0.8px;
 
-        &:last-child {
+        &:last-of-type {
           border: none;
         }
         &:hover {
@@ -83,9 +84,10 @@ function Footer() {
             <span>&#169; { new Date().getFullYear() }</span>
           </div>
           <div className="footer__submenu">
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/tools">Tools</a>
+            <Link to="projects" className="btn">Projects</Link>
+            <Link to="about" className="btn">About</Link>
+            <Link to="contact" className="btn">Contact</Link>
+            {/* <Link to="tools" className="btn">Tools</Link> */}
             <a href="/images/resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
