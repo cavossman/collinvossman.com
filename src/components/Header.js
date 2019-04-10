@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { UniversalLink } from '../cvcore/routing';
 import { css } from 'emotion';
 import { colors } from '../styles';
 
@@ -49,6 +49,7 @@ const styles = css`
     }
     @media (max-width: 412px) {
       a {
+        font-size: 0.9rem;
         letter-spacing: 1px;
         padding: 8px 3px;
       }
@@ -85,13 +86,13 @@ class Header extends React.Component {
         <header className={`Header ${(isScrolling) ? '' : 'top'}`}>
           <div className="container">
             <div className="Header_inner">
-              <Link to="/" className="Header_logo">
+              <UniversalLink to="/" className="Header_logo">
                 <img src={ (isScrolling) ? '/images/initials.png' : '/images/initials-white.png' } alt="" />
-              </Link>
+              </UniversalLink>
               <div className="Header_navigation">
-                <Link to="projects" className="btn">Projects</Link>
-                <Link to="about" className="btn">About</Link>
-                <Link to="contact" className="btn">Contact</Link>
+                <UniversalLink to="projects" className="btn">Projects</UniversalLink>
+                <UniversalLink to="about" className="btn">About</UniversalLink>
+                <UniversalLink to="contact" className="btn">Contact</UniversalLink>
               </div>
             </div>
           </div>

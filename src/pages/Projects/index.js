@@ -10,7 +10,7 @@ const projects = [
     description: 'Website built using Wordpress for updating content.  Utilizes React and the Wordpress REST API.',
     images: [
       '/images/projects/mag/mag.png',
-      '/images/projects/mag/mag.gif',
+      '/images/projects/mag/mobile-mag.gif',
     ],
     link: 'https://mag.collinvossman.com'
   },
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: 'Micro Cloud',
-    description: 'Content Management System (CMS) for Micro Map applications.  API utilizes Node, Express and MongoDB.  Interface utilizes React.',
+    description: 'CRUD application for Micro Map - allowing updates to building and campus information.  API utilizes Node, Express and MongoDB.  Interface utilizes React.',
     images: [
       '/images/projects/micro-cloud/interface-buildings.png'
     ]

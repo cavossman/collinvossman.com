@@ -5,6 +5,7 @@ import { css } from 'emotion';
 const defaultStyles = css`
   display: inline-block;
   vertical-align: top;
+  max-width: 100%;
 
   .thumbnail {
     height: 100%;

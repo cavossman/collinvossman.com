@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { UniversalLink } from '../cvcore/routing'
 import { css } from 'emotion';
 import { colors } from '../styles';
 
@@ -28,6 +28,9 @@ const styles = css`
       }
     }
     .footer__submenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 0 0 30px 0;
       max-width: 100%;
       a {
@@ -36,7 +39,7 @@ const styles = css`
         text-transform: uppercase;
         padding: 0px 10px;
         border-radius: 0;
-        border-right: 1px solid #fff;
+        ${'' /* border-right: 1px solid #fff; */}
         display: inline-block;
         letter-spacing: 0.8px;
 
@@ -68,6 +71,20 @@ const styles = css`
       transform: rotate(25deg);
     }
   }
+
+  @media (min-width: 400px) {
+    .footer {
+      &__inner {
+        .footer__submenu {
+          flex-direction: row;
+
+          a {
+            border-right: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
 `;
 
 function Footer() {
@@ -76,20 +93,20 @@ function Footer() {
       <div className="container">
         <div className="footer__inner">
           <div className="footer__social">
-            <a href="https://www.linkedin.com/in/collin-vossman/" rel="noopener noreferrer" target="_blank">
+            <UniversalLink to="https://www.linkedin.com/in/collin-vossman/" rel="noopener noreferrer" target="_blank">
               <img src="/images/icons/linked-in.png" alt="LinkedIn Profile" />
-            </a>
-            <a href="https://github.com/cavossman" rel="noopener noreferrer" target="_blank">
+            </UniversalLink>
+            <UniversalLink to="https://github.com/cavossman" rel="noopener noreferrer" target="_blank">
               <img src="/images/icons/github.png" alt="GitHub Profile" />
-            </a>
+            </UniversalLink>
             <span>&#169; { new Date().getFullYear() }</span>
           </div>
           <div className="footer__submenu">
-            <Link to="projects" className="btn">Projects</Link>
-            <Link to="about" className="btn">About</Link>
-            <Link to="contact" className="btn">Contact</Link>
+            <UniversalLink to="projects" className="btn">Projects</UniversalLink>
+            <UniversalLink to="about" className="btn">About</UniversalLink>
+            <UniversalLink to="contact" className="btn">Contact</UniversalLink>
             {/* <Link to="tools" className="btn">Tools</Link> */}
-            <a href="/images/resume.pdf" target="_blank">Resume</a>
+            <a href="/images/resume.pdf" target="_blank" className="btn">Resume</a>
           </div>
         </div>
       </div>

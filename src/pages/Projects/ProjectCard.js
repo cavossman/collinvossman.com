@@ -26,7 +26,7 @@ const styles = css`
 
         .headline {
           width: 70%;
-          font: normal 30px/1.5 "Source Sans Pro",sans-serif;
+          font: normal 22px/1.5 "Source Sans Pro",sans-serif;
           font-weight: 300;
           line-height: 55px;
           color: #3b3b3b;
@@ -77,17 +77,19 @@ const styles = css`
 `;
 
 const customFancyboxStyles = css`
+  margin-bottom: 20px;
   .fancybox {
     &:last-of-type {
       margin-right: 0;
     }
   }
   .thumbnail {
-    margin: 0 10px;
     border: 1px solid ${colors.color3};
   }
-  @media (max-width:992px) {
-    margin-bottom: 20px;
+  @media (min-width:992px) {
+    .thumbnail {
+      margin: 0 10px;
+    }
   }
 `;
 
