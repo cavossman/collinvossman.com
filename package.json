@@ -10,9 +10,8 @@
   "author": "Collin Vossman",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "emotion": "^10.0.9",
-    "lodash": "^4.17.11",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^6.0.0",
