@@ -11,14 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.1",
-    "emotion": "^10.0.9",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-redux": "^6.0.0",
+    "emotion": "^10.0.17",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-redux": "^6.0.1",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.8",
-    "sanitize-html": "^1.20.0",
+    "sanitize-html": "^1.20.1",
     "tinycolor2": "^1.4.1"
   },
   "browserslist": [

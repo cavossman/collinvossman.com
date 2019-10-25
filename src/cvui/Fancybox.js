@@ -24,24 +24,18 @@ const defaultStyles = css`
 
     background-color: rgba(0, 0, 0, 0.6);
     display: block;
-    .fancy-photo {
+
+    img {
       position: absolute;
       margin: auto;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-
-      overflow: hidden;
-      max-height: 620px;
-      width: fit-content;
-      height: fit-content;
-
-      img {
-        height: auto;
-        width: 100%;
-        max-width: calc(100% - 30px);
-      }
+      width: auto;
+      height: auto;
+      max-height: 650px;
+      max-width: calc(100% - 30px);
     }
   }
 
@@ -78,10 +72,7 @@ const defaultStyles = css`
         max-width: 1200px;
 
         img {
-          width: auto;
-          height: auto;
-          max-width: 100%;
-          max-height: 100%;
+          max-width: calc(100% - 30px);
         }
       }
     }
@@ -110,12 +101,12 @@ class Fancybox extends React.Component {
   }
 
   openImage() {
-    this.setState({'openImage': true});
+    this.setState({ 'openImage': true });
   }
 
   handleClickOutside(event) {
-    if(event.target.className === 'fancybox-open') {
-      this.setState({'openImage': false});
+    if (event.target.className === 'fancybox-open') {
+      this.setState({ 'openImage': false });
     }
   }
 
@@ -145,17 +136,17 @@ class Fancybox extends React.Component {
       width: `${width}px`
     };
     return (
-      <div className={ `fancybox ${defaultStyles} ${className} ${uniqueClass}` } style={ customCSS } >
-        <div className="thumbnail" style={{backgroundImage: 'url(' + image + ')'}} onClick={ this.openImage } ></div>
-        { openImage &&
+      <div className={`fancybox ${defaultStyles} ${className} ${uniqueClass}`} style={customCSS} >
+        <div className="thumbnail" style={{ backgroundImage: 'url(' + image + ')' }} onClick={this.openImage} ></div>
+        {openImage &&
           <div className="fancybox-open">
             {
               !isNaN(index) && uniqueClass && <div className="count unselectable">{index + 1} | {this.getImageCount()}</div>
             }
             <div className="fancy-photo">
-              <img src={ image } alt={alt} ref={ this.setWrapperRef } />
+              <img src={image} alt={alt} ref={this.setWrapperRef} />
               {
-                title && <div class="title-overlay">{ title }</div>
+                title && <div class="title-overlay">{title}</div>
               }
             </div>
           </div>

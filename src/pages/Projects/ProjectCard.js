@@ -105,11 +105,11 @@ class ProjectCard extends React.Component {
         <div className="pc">
           <div className="pc__inner">
             <div className="pc__inner-details">
-              <span className="headline">{ title }<hr align="left"/></span>
-              <span className="description"> { description }</span>
+              <span className="headline">{title}<hr align="left" /></span>
+              <span className="description"> {description}</span>
             </div>
             <div className="pc__inner-image">
-              { featuredImages &&
+              {featuredImages &&
                 featuredImages.map((photo, index) =>
                   <Fancybox
                     className={customFancyboxStyles}
