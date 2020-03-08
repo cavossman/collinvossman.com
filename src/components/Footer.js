@@ -106,7 +106,7 @@ function Footer() {
             <UniversalLink to="about" className="btn">About</UniversalLink>
             <UniversalLink to="contact" className="btn">Contact</UniversalLink>
             {/* <Link to="tools" className="btn">Tools</Link> */}
-            <a href="/images/resume.pdf" target="_blank" className="btn">Resume</a>
+            <a href="/images/resume-03-08-2020.pdf" target="_blank" className="btn">Resume</a>
           </div>
         </div>
       </div>

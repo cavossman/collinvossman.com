@@ -24,12 +24,12 @@ const styles = css`
       }
 
       &-right {
+        .ec__details { margin: 1.5rem 0; } 
+
         .ec__location, .ec__title, .ec__dates {
           display: block;
           text-align: center;
         }
-
-        .ec__divider { height: 20px; }
 
         .ec__title {
           text-transform: uppercase;
@@ -61,11 +61,11 @@ const styles = css`
         }
 
         &-right {
+          .ec__details { margin: 0; }
+
           .ec__location, .ec__title, .ec__dates {
             text-align: left;
           }
-
-          .ec__divider { display: none; }
 
           .ec__title {
             font-size: 1.2rem;
@@ -98,11 +98,23 @@ class EmploymentCard extends React.Component {
               <div className="ec__image" style={ imageStyles }></div>
             </div>
             <div className="ec__inner-right">
-              <span className="ec__title">{ title }</span>
-              <span className="ec__location">{ location }</span>
-              <span className="ec__dates">{ startDate } { endDate }</span>
-              <div className="ec__divider"></div>
-              <span className="ec__description" dangerouslySetInnerHTML={ {__html: sanitizeHTML(description)} }></span>
+              <div className="ec__details">
+                <span className="ec__title">{ title }</span>
+                <span className="ec__location">{ location }</span>
+                <span className="ec__dates">{ startDate ? startDate + ' - ' : '' } { endDate }</span>
+              </div>
+              {
+                description.list &&
+                <ul className="ec__description">
+                  {
+                    description.list.map(item => {
+                      return (
+                        <li>{item}</li>
+                      )
+                    })
+                  }
+                </ul>
+              }
             </div>
           </div>
         </div>
@@ -114,7 +126,7 @@ class EmploymentCard extends React.Component {
 EmploymentCard.propTypes = {
   title: PropTypes.string,
   location: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.object,
   image: PropTypes.string,
   startDate: PropTypes.string,
   endDate: PropTypes.string
@@ -123,7 +135,7 @@ EmploymentCard.propTypes = {
 EmploymentCard.defaultProps = {
   title: '',
   location: '',
-  description: '',
+  description: {},
   image: '',
   startDate: '',
   endDate: 'Present'

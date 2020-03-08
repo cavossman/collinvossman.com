@@ -38,9 +38,9 @@ function BioSection() {
         <div className="bio__overview">
           <p>
             I am a recent graduate of Kansas State University where I majored in Computer Science and minored in
-            Leadership Studies.  I am in my second year as a developer and I'm currently a frontend developer at Intouch
-            Solutions. I have a strong interest in working with APIs and enjoy both front end and back end development.
-            In my free time I enjoy spending time with my wife and our puppy.
+            Leadership Studies.  I am in my second year as a developer and I'm currently a web developer at Go Local
+            Interactive. I have a strong interest in task automation and enjoy both front end and back end development.
+            In my free time I enjoy spending time with my wife and our two dogs Lainey and Daisy.
           </p>
         </div>
       </div>
