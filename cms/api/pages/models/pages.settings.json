@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "isFrontPage": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    }
+  }
+}
