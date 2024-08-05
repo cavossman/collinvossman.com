@@ -91,7 +91,7 @@ class Header extends React.Component {
               </UniversalLink>
               <div className="Header_navigation">
                 <UniversalLink to="projects" className="btn">Projects</UniversalLink>
-                <UniversalLink to="about" className="btn">About</UniversalLink>
+                <UniversalLink to="about" className="btn">Employment</UniversalLink>
                 <UniversalLink to="contact" className="btn">Contact</UniversalLink>
               </div>
             </div>

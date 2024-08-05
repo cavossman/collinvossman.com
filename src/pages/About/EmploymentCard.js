@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'emotion';
-import { sanitizeHTML } from '../../cvcore';
 
 const styles = css`
   background-color: #fff;

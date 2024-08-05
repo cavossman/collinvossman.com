@@ -13,11 +13,15 @@ const styles = css`
     display: flex;
     flex-direction: column-reverse;
     .footer__social {
+      display: flex;
+      justify-content: center;
       a {
         padding: 0px;
+        text-decoration: none;
       }
-      img {
+      img, div {
         height: 50px;
+        width: 50px;
         margin: 5px;
         &:hover {
           animation: 0.2s iconTilt 0s linear;
@@ -56,7 +60,7 @@ const styles = css`
     .footer__inner {
       flex-direction: column;
       .footer__submenu {
-        padding: 50px 0 10px 0;
+        padding: 30px 0 10px 0;
         a {
           padding: 5px 20px;
         }
@@ -99,14 +103,19 @@ function Footer() {
             <UniversalLink to="https://github.com/cavossman" rel="noopener noreferrer" target="_blank">
               <img src="/images/icons/github.png" alt="GitHub Profile" />
             </UniversalLink>
-            <span>&#169; { new Date().getFullYear() }</span>
+            <UniversalLink to="https://codevoss.com/" rel="noopener noreferrer" target="_blank">
+              <div className="bg-white d-flex justify-content-center align-items-center" style={{ borderRadius: '50%' }}>
+                <strong className="d-inline-flex" style={{ color: colors.color1, fontSize: "1.5rem" }}>CV</strong>
+              </div>
+            </UniversalLink>
           </div>
+          <span className="mt-4">&#169; { new Date().getFullYear() }</span>
           <div className="footer__submenu">
             <UniversalLink to="projects" className="btn">Projects</UniversalLink>
             <UniversalLink to="about" className="btn">About</UniversalLink>
             <UniversalLink to="contact" className="btn">Contact</UniversalLink>
             {/* <Link to="tools" className="btn">Tools</Link> */}
-            <a href="/images/resume-03-08-2020.pdf" target="_blank" className="btn">Resume</a>
+            <a href="/images/resume-06-2024.pdf" target="_blank" className="btn">Resume</a>
           </div>
         </div>
       </div>

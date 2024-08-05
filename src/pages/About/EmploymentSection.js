@@ -17,7 +17,7 @@ class EmploymentSection extends React.Component {
     const { employment } = this.props;
     return (
       <div className={styles}>
-        <h3 className="employment-heading">EMPLOYMENT</h3>
+        <h3 className="employment-heading mb-5">EMPLOYMENT</h3>
         {
           employment &&
           employment.map(job => {

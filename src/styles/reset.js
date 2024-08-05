@@ -1,4 +1,5 @@
 import { injectGlobal } from 'emotion';
+import colors from './colors';
 
 injectGlobal(`
   body {
@@ -6,6 +7,9 @@ injectGlobal(`
     &.noscroll {
       overflow: hidden;
     }
+  }
+  html {
+    background-color: ${colors.color1}
   }
   a {
     text-decoration: none;

@@ -20,6 +20,9 @@ const styles = css`
           text-align: justify;
           margin: 20px;
         }
+        h2 {
+          margin: 20px;
+        }
       }
       @media (min-width: 992px) {
         flex-direction: row;
@@ -36,11 +39,12 @@ function BioSection() {
       <div className="container bio">
         <img src="/images/cv.jpg" alt="Collin Vossman" className="bio__image" />
         <div className="bio__overview">
+          <h2>About Me</h2>
           <p>
-            I am a recent graduate of Kansas State University where I majored in Computer Science and minored in
-            Leadership Studies.  I am in my second year as a developer and I'm currently a web developer at Go Local
-            Interactive. I have a strong interest in task automation and enjoy both front end and back end development.
-            In my free time I enjoy spending time with my wife and our two dogs Lainey and Daisy.
+          I'm a Software engineer in the entertainment and ticketing industry. Proficient in
+          languages such as PHP and TypeScript as well as developing with frameworks
+          such as Laravel, React, Vue. Passionate about automation, improving
+          development workflows and collaborating to solve complex problems. 
           </p>
         </div>
       </div>

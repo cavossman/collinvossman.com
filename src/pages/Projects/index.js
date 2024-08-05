@@ -6,22 +6,28 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
   {
-    title: 'mag.collinvossman.com',
+    title: 'REPL',
+    description: 'Run code in isolated docker containers to create entire virtual environments. Built with Docker, Terraform, AWS, Next, and TypeScript.',
+    images: [
+      '/images/projects/mew/create.png',
+      '/images/projects/mew/repl.png',
+    ],
+  },
+  {
+    title: 'Headless WordPress',
     description: 'Website built using Wordpress for updating content.  Utilizes React and the Wordpress REST API.',
     images: [
       '/images/projects/mag/mag.png',
       '/images/projects/mag/mobile-mag.gif',
     ],
-    link: 'https://mag.collinvossman.com'
   },
   {
-    title: 'allaboutjv.com',
+    title: 'All About JV',
     description: 'Website for my wife to display some of her photography, writing and music. Custom admin section to add and update content utilizing Express and MongoDB.',
     images: [
       '/images/projects/allaboutjv.com/homepage.png',
       '/images/projects/allaboutjv.com/photos.png'
     ],
-    link: 'http://allaboutjv.com'
   },
   {
     title: 'Micro Cloud',
@@ -54,7 +60,7 @@ function Projects() {
     <PageWrapper>
       <Col1>
         <div className={styles}>
-          <h1 className="page-title">PERSONAL PROJECTS</h1>
+          <h1 className="page-title mb-5">PERSONAL PROJECTS</h1>
           {
             projects.map(project => {
               return (

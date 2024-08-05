@@ -7,19 +7,46 @@ import AwardsSection from './AwardsSection';
 
 const employment = [
   {
-    title: 'Web Developer',
+    title: 'Co-Founder & CTO',
+    location: 'CodeVoss',
+    description: {
+      list: []
+    },
+    image: '/images/about/codevoss.jpg',
+    startDate: 'July 2024',
+    endDate: 'Present',
+  },
+  {
+    title: 'Software Engineer',
+    location: 'Tickets for Less',
+    description: {
+      list: [
+        'Develop CI/CD pipelines to automate code delivery.',
+        'Reduce technical debt by consolidating divergent codebases and migrating servers from existing vendors to AWS.',
+        'Extend custom PHP framework to provide web services for ticket brokers'
+      ]
+    },
+    image: '/images/about/tfl.png',
+    startDate: 'November 2023',
+    endDate: 'Present',
+  },
+  {
+    title: 'Lead Software Engineer',
     location: 'Go Local Interactive',
     description: {
       list: [
-        'Build custom WordPress themes.',
-        'Manage build automation with gulp and webpack',
-        'Develop self storage rental and payment portal application build with vue.js',
-        'Maintain Laravel API and custom dashboard projects'
+        'Design and develop Laravel based APIs integrate client POS software with website',
+        'Architect internal reporting solution that retrieves data from various 3rd parties to produce reports with Apache Superset',
+        'Developed an admin dashboard for multifamily industry to manage and supplement data from their POS.',
+        'Develop payment portal and online rental applications for the self storage industry',
+        'Implement linting, unit testing, automated deployments',
+        'Create custom/reusable WordPress themes and plugins',
+        'Lead software team and mentor teammates in the form of 1:1 and code reviews'
       ]
     },
     image: '/images/about/gli-logo.jpg',
     startDate: 'May 2019',
-    endDate: 'Present',
+    endDate: 'November 2023',
   },
   {
     title: 'Frontend Developer',
